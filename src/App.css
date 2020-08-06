@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+.App{
+color: white;
+width : 100%;
+/* overflow-x: hidden;  */
+}
+ 
+/* mobile design */
+.navigation{
+  color : yellowgreen;
+  display : flex;
+  width : 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brandName{
+  color : grey;
+  display : flex;
+  font-family: cursive;
+  margin-left : 5%; 
+  font-style: italic;
+  margin-top : 3%;
+  font-size : 23px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.span1 {  
+  margin-right : 10%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation ul{
+  display: none;
+}
+
+.barIcon {
+  margin-left : 42%;
+  cursor : pointer;
+  font-size : 28px;
+  margin-top : 3%;
+  margin-right : 2%;
+}
+
+.mobileNavlist{
+  display: block;
+  color : yellowgreen;
+  margin-left : 40%;
+  font-family : cursive;
+  margin-top : 4%;
+}
+
+.mobileNavlist span {
+  font-size : 21px;
+}
+
+
+/* for desktop */
+@media only screen and (min-width: 1031px)  { 
+/* navigation style */
+.navigation{
+  color : yellowgreen;
+  display : flex;
+  width : 100%;
+}
+
+.brandName{
+  color : grey;
+  display : flex;
+  font-family: cursive;
+  margin-left : 5%;
+  font-style: italic;
+  margin-top : 1%;
+}
+
+.span1 {  
+  margin-right : 10%;
+}
+
+.navigation ul{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  margin-left: 52%;
+  font-family: cursive;
+
 }
 
-.App-link {
-  color: #61dafb;
+.navigation ul li {
+  margin-left : 9%;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.barIcon{
+  display: none;
+}
+.mobileNavlist{
+  display: none;
+}
+
+}
+
+
+@media only screen and (max-width: 1030px) and (min-width: 1020px)  {
+
+  /* navigation style for tablet ipad pro*/
+.navigation{
+  color : yellowgreen;
+  display : flex;
+  width : 100%;
+  font-size: 21px;
+}
+
+.brandName{
+  color : grey;
+  display : flex;
+  font-family: cursive;
+  margin-left : 2%;
+  font-style: italic;
+  margin-top : 2%;
+}
+
+.navigation ul{
+  display: flex;
+  list-style: none;
+  margin-left: 30%;
+  font-family: cursive;
+}
+.navigation ul li {
+  margin-left : 5%;
+  cursor: pointer;
+}
+
+.barIcon{
+  display: none;
+}
+.mobileNavlist{
+  display: none;
+}
+}
+
+@media only screen and (max-width: 770px) and (min-width: 765px)  {
+  
+  /* navigation style for tablet ipad*/
+.navigation{
+  color : yellowgreen;
+  display : flex;
+  width : 100%;
+  font-size: 21px;
+}
+
+.brandName{
+  color : grey;
+  display : flex;
+  font-family: cursive;
+  margin-left : 2%;
+  font-style: italic;
+  margin-top : 3%;
+}
+
+.navigation ul{
+  display: flex;
+  list-style: none;
+  margin-left: 20%;
+  font-family: cursive;
+}
+.navigation ul li {
+  margin-left : 5%;
+  cursor: pointer;
+}
+
+.barIcon{
+  display: none;
+}
+.mobileNavlist{
+  display: none;
+}
 }

@@ -1,0 +1,86 @@
+.projectBody{
+    color : black;
+}
+
+.projectHeader{
+    margin-top : 10%;
+    margin-left : 45%;
+    margin-bottom : 5%;
+}
+
+.projectHeader span {
+    font-weight : bold;
+    font-size : 34px;
+    border-bottom : 7px solid yellowgreen;
+    font-family : 'Times New Roman', Times, serif;
+    color : black;
+}
+
+@media only screen and (min-width: 1010px)  {
+
+    .projectHeader{
+        margin-top : 10%;
+        margin-left : 45%;
+        margin-bottom : 5%;
+    }
+    
+    .projectHeader span {
+        font-weight : bold;
+        font-size : 34px;
+        border-bottom : 7px solid yellowgreen;
+        font-family : 'Times New Roman', Times, serif;
+        color : black;
+    }
+
+    .projects{
+        display : flex;
+        margin-left : 2%;
+        height: 345px;
+    }
+
+        img{
+            width: 400px;
+            height : 150px;
+        }
+
+    .projectFlex {
+        width : 400px;
+        margin-right : 3%;
+        box-shadow: 5px 5px 5px grey;
+        height : 450px;
+    }
+
+    .projectName {
+        margin-top : 10%;
+        margin-bottom : 5%;
+        color : green;
+        font-family : bold;
+        font-size : 20px;
+        font-family : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    section {
+        margin-left : 5%;
+        margin-right : 7%;
+    }
+
+    .statement {
+        font-family : 'Times New Roman', Times, serif;
+        color : grey;
+        font-family : bold;
+        font-size : 21px;
+        margin-bottom : 13%;
+    }
+
+    button{
+        border-radius : 50px;
+        border : 1px solid yellowgreen;
+        font-weight : bold;
+        height : 35px;
+        background-color : white;
+        margin-right : 2%;
+    }
+    
+
+
+}

@@ -1,0 +1,98 @@
+.aboutBody{
+    margin-top : 35%;
+}
+
+.about_me{
+    font-family : 'Times New Roman', Times, serif;
+    font-size : 25px;
+    font-weight : bold;
+    color: black;
+    border-bottom : 7px solid yellowgreen;
+    margin-left: 4%;
+}
+
+.aboutBody div{
+    margin-top: 3%;
+    margin-left : 4%;
+    margin-right : 1%;
+}
+
+.aboutBody div p {
+    color : grey;
+    font-family : 'Times New Roman', Times, serif;
+}
+
+.aboutBody div button {
+    margin-right : 2%;
+    border-radius : 50px;
+    font-weight : bold;
+    height : 35px;
+    margin-bottom: 2%;
+    background-color : white;
+    border : 1px solid yellowgreen;
+}
+
+.aboutBody:focus {
+transform: (5%, 0);
+}
+
+.buttonDiv{
+    margin-left : 0;
+}
+
+.buttonDiv2{
+    margin-left : 0;
+}
+
+@media only screen and (min-width: 1010px)  {
+    .aboutBody{
+        margin-top : 20%;
+    }
+
+    .about_me{
+        font-size : 40px;
+        font-weight : bold;
+        margin-left: 20%;
+    }
+
+    .aboutBody div{
+        margin-top: 3%;
+        margin-left : 20%;
+        margin-right : 15%;
+    }
+    .buttonDiv{
+        margin-left : 3%;
+    }
+
+    .buttonDiv2{
+        margin-left : 15%;
+    }
+}
+
+@media only screen and (max-width: 1030px) and (min-width: 1020px)  {
+    .aboutBody{
+        margin-top : 45%;
+    }
+
+    .about_me{
+        font-size : 40px;
+        font-weight : bold;
+        margin-left: 20%;
+    }
+
+    .aboutBody div{
+        margin-top: 3%;
+        margin-left : 10%;
+        margin-right : 10%;
+        font-size : 28px;
+    }
+    .buttonDiv{
+        margin-left : 3%;
+        font-size : 32px;
+    }
+
+    .buttonDiv2{
+        margin-left : 15%;
+        font-size : 32px;
+    }
+}
