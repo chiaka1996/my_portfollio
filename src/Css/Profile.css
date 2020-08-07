@@ -127,7 +127,7 @@
     
     .greeting {
         color : grey;
-        font-size: 40px;
+        font-size: 50px;
         font-weight: bold;
         font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
@@ -231,6 +231,10 @@
         width : 128px;
     }
 
+    .greeting {
+        font-size : 40px;
+    }
+
     .Resume-contact{
         display: flex;
         margin-top : 2%;
@@ -266,6 +270,10 @@
     .resume{
         
         width : 28%;
+    }
+
+    .greeting {
+        font-size : 40px;
     }
     
     .resume p{
