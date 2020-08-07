@@ -65,7 +65,7 @@ const Projects = (props) => {
             <div><img src={project5} alt="project5" /></div>
                 <section>
                 <p className='projectName' onClick={replaceFlux}> Hotel Website</p>
-                    <p className="statement">This is a frontend user friendly hotel website, built by a team of HNGi7 interns, in which i was opportuned to be the team lead </p>
+                    <p className="statement">This is a user friendly hotel website, built by a team of HNGi7 interns, in which i was opportuned to be the team lead </p>
                     <div>
                         <button>#HTML</button>
                         <button>#CSS</button>
