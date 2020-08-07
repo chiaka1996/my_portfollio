@@ -16,7 +16,7 @@ const About = (props) => {
               <button>#HTML</button> <button>#CSS</button> <button>#BOOTSTRAP</button> <button>#SASS</button> <button>#MATERIAL UI</button> <button>#PHP</button>
           <button>#MYSQL</button> <button>#JAVASCRIPT</button>
           <button>#REACTJS</button> <button>#MONGODB</button>
-          <button>#EXPRESS</button> <button>#NODE</button> <button>#Redux</button>
+           <button>#EXPRESS</button> <button>#NODE</button> <button>#Redux</button>
           <button>Git</button> <button>github</button> <button>Netlify</button>
           </section>
    
