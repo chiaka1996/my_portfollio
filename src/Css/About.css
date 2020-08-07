@@ -1,5 +1,6 @@
 .aboutBody{
-    margin-top : 35%;
+    margin-top : 48%;
+    margin-bottom : 45%;
 }
 
 .about_me{
@@ -8,7 +9,7 @@
     font-weight : bold;
     color: black;
     border-bottom : 7px solid yellowgreen;
-    margin-left: 4%;
+    margin-left: 13%;
 }
 
 .aboutBody div{
@@ -22,7 +23,8 @@
     font-family : 'Times New Roman', Times, serif;
 }
 
-.aboutBody div button {
+.aboutBody div button{
+    font-size : 12px;
     margin-right : 2%;
     border-radius : 50px;
     font-weight : bold;
@@ -30,10 +32,6 @@
     margin-bottom: 2%;
     background-color : white;
     border : 1px solid yellowgreen;
-}
-
-.aboutBody:focus {
-transform: (5%, 0);
 }
 
 .buttonDiv{
@@ -44,9 +42,27 @@ transform: (5%, 0);
     margin-left : 0;
 }
 
+@media only screen and (max-width: 775px) and (min-width: 700px) {
+    
+    .about_me{
+        margin-left: 28%;
+    }
+
+    .aboutBody div p {
+        font-size : 24px;
+    }
+
+    .aboutBody div button{
+        font-size : 17px;
+    }
+    
+
+    }
+
 @media only screen and (min-width: 1010px)  {
     .aboutBody{
         margin-top : 20%;
+        margin-bottom : 30%;
     }
 
     .about_me{
@@ -60,18 +76,29 @@ transform: (5%, 0);
         margin-left : 20%;
         margin-right : 15%;
     }
+    .aboutBody div button{
+        font-size : 12px;
+        margin-right : 2%;
+        border-radius : 50px;
+        font-weight : bold;
+        height : 35px;
+        margin-bottom: 2%;
+        background-color : white;
+        border : 1px solid yellowgreen;
+    }
     .buttonDiv{
-        margin-left : 3%;
+        margin-left : 8%;
     }
 
     .buttonDiv2{
-        margin-left : 15%;
+        margin-left : 12%;
     }
 }
 
 @media only screen and (max-width: 1030px) and (min-width: 1020px)  {
     .aboutBody{
         margin-top : 45%;
+        margin-bottom : 50%;
     }
 
     .about_me{
@@ -86,6 +113,15 @@ transform: (5%, 0);
         margin-right : 10%;
         font-size : 28px;
     }
+
+    .aboutBody div p {
+        font-size : 29px;
+    }
+
+    .aboutBody div button{
+        font-size : 21px;
+    }
+
     .buttonDiv{
         margin-left : 3%;
         font-size : 32px;

@@ -1,10 +1,12 @@
+/* eslint-disable no-restricted-globals */
 import React, {useState, useEffect} from 'react';
 import ProfilePic from './Images/profilepics_edited.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ReactTypingEffect from 'react-typing-effect';
 import  '../Css/Profile.css';
+import { Link } from 'react-router-dom';
 
-const Profile = () => {
+const Profile = (props) => {
 
     const [greetings, setGreetings] = useState('');
 
@@ -22,31 +24,47 @@ const Profile = () => {
         return  setGreetings( <div className="greeting"> Good Evening! <FontAwesomeIcon icon="smile-beam" size="sm" color="black" />, I'm <span className="name"> Chiaka Daniel</span></div>);
          }
          
-    }, [ ])
+    }, [ ]);
 
+ 
     return (
         <div className="profile">
             <div className="profilePic"> <img src={ProfilePic} alt="profile pic"  /> </div>
             <div className="introduction_name">{greetings}</div>
             <div className="typing-effect">
                 <ReactTypingEffect
-                 text = {["I'm a FullStack Software Developer.", "Motivated. Talented. Industrous"]} 
+                 text = {["I'm a FullStack Software Developer.", "Motivated. Talented. Disciplined"]} 
                 />
             </div>
 
             <div className='logos'>
-    <a href="twitter.com/NewtonChiaka"><FontAwesomeIcon icon={['fab', 'twitter']} size="2x" color="skyBlue" className="awesomeLogos" /></a>
-    <a href="https://github.com/chiaka1996"><FontAwesomeIcon icon={['fab', 'github']} size="2x" color="black" className="awesomeLogos"/></a>
-    <a href=""><FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" color="skyBlue" className="awesomeLogos"/></a>
-    <a hhref=""> <FontAwesomeIcon icon={['fab', 'facebook']} size="2x" color="blue" className="awesomeLogos"/> </a>  
+
+     <Link target="_blank" to="/twitter">
+         <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" color="skyBlue" className="awesomeLogos" />
+     </Link>
+
+    <Link target="_blank" to="/github">
+        <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="black" className="awesomeLogos" />
+        </Link>
+
+    <Link target="_blank" to="/linkedin">
+        <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" color="skyBlue" className="awesomeLogos"/>
+        </Link>
+
+    <Link target="_blank" to="/facebook"> 
+    <FontAwesomeIcon icon={['fab', 'facebook']} size="2x" color="blue" className="awesomeLogos"/> 
+    </Link> 
+
     </div>
 
         <div className="Resume-contact">
-            <div className='resume'> <p>My Resume</p></div>
-            <div className='contactMe'><p>Contact Me</p></div>
+           <Link target="_blank" to="/resume" className='resume'> <div > <p>My Resume</p></div> </Link>
+
+            <div className='contactMe' onClick={()=>props.scrollToRef(props.myContact)}><p>Contact Me</p></div>
         </div>
 
         <FontAwesomeIcon icon="angle-down" size="4x" color="yellowgreen" className="ArrowDown" />
+
         </div>
     )
 }

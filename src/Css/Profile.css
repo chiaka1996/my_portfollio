@@ -10,13 +10,13 @@
 }
 
 .introduction_name {
-    margin-left : 8%;
+    margin-left : 10%;
     display: flex;
 }
 
 .greeting {
     color : grey;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: bold;
     font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -58,11 +58,17 @@
 .resume{
     border : 3px solid yellowgreen;
     width : 40%;
+    text-decoration-color: white;
     height : 80px;
     margin-left : 4%;
     color :grey;
     font-size : 18px;  
     border-radius : 10px; 
+}
+
+.resume:active{
+    color : white;
+    background-color: yellowgreen;
 }
 
 .resume p{
@@ -78,6 +84,11 @@
     color : grey;
     font-size : 18px;
     border-radius : 10px;
+}
+
+.contactMe:active{
+    color : white;
+    background-color: yellowgreen;
 }
 
 .contactMe p{
@@ -107,7 +118,7 @@
     
     .profilePic img {
         border-radius:  50%;
-        width : 125px;
+        width : 140px;
     }
     
     .introduction_name {
@@ -164,6 +175,10 @@
         font-size : 18px;   
         border-radius : 10px;
     }
+    .resume:hover{
+        color : white;
+        background-color: yellowgreen;
+    }
     
     .resume p{
         margin-top : 8%;
@@ -185,6 +200,10 @@
         margin-left : 25%;
     }
 
+    .contactMe:hover{
+        color : white;
+        background-color: yellowgreen;
+    }
     .ArrowDown {
         margin-left : 46%;
         animation-name : example;
@@ -211,6 +230,13 @@
         border-radius:  50%;
         width : 128px;
     }
+
+    .Resume-contact{
+        display: flex;
+        margin-top : 2%;
+        margin-left : 30%;
+        
+    }
   }
 
   @media only screen and (max-width: 770px) and (min-width: 765px)  {
@@ -228,7 +254,7 @@
     }
 
     .introduction_name {
-        margin-left : 3%;
+        margin-left : 6%;
     }
 
     .Resume-contact{

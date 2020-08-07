@@ -1,0 +1,85 @@
+/* mobile design */
+.cert_header {
+    margin-left : 30%; 
+    margin-top : 35%;
+    margin-bottom : 1%;
+    color : black;
+}
+
+.cert_header span{
+    border-bottom : 7px solid yellowgreen;
+    font-size : 20px;
+    font-weight : bold;
+}
+
+.contact-intro{
+    color : black;
+    font-size : 15px;
+    margin-left : 7%;
+    margin-right : 7%;
+}
+
+.mail{
+    margin-top : 3%;
+    color : grey;
+    margin-left : 7%;
+    font-size : 20px;
+    font-weight: bold;
+    font-family : 'Times New Roman', Times, serif;
+    margin-bottom : 2%;
+
+}
+
+.contactLogo{
+    margin-right : 1%;
+}
+
+/* desktop and ipad pro */
+@media only screen and (min-width: 700px)  { 
+.cert_header {
+    margin-left : 35%; 
+    margin-top : 12%;
+    margin-bottom : 1%;
+    color : black;
+}
+
+.cert_header span{
+    border-bottom : 7px solid yellowgreen;
+    font-size : 50px;
+    font-weight : bold;
+}
+
+.contact-intro{
+    color : black;
+    font-size : 25px;
+    margin-left : 7%;
+    margin-right : 7%;
+}
+
+.mail{
+    margin-top : 3%;
+    color : grey;
+    margin-left : 7%;
+    font-size : 20px;
+    font-weight: bold;
+    font-family : 'Times New Roman', Times, serif;
+    margin-bottom : 2%;
+
+}
+
+.contactLogo{
+    margin-right : 1%;
+}
+}
+
+
+/* design for ipad */
+@media only screen and (max-width: 775px) and (min-width: 700px) {
+    .cert_header {
+        margin-left : 20%; 
+        margin-top : 12%;
+        margin-bottom : 1%;
+        color : black;
+    }
+    
+}

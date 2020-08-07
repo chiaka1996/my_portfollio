@@ -1,7 +1,8 @@
 .App{
-color: white;
+  background-color : white;
 width : 100%;
 /* overflow-x: hidden;  */
+cursor: pointer;
 }
  
 /* mobile design */
@@ -9,6 +10,10 @@ width : 100%;
   color : yellowgreen;
   display : flex;
   width : 100%;
+}
+
+.link{
+  color : yellowgreen;
 }
 
 .brandName{
@@ -77,7 +82,7 @@ width : 100%;
   list-style: none;
   margin-left: 52%;
   font-family: cursive;
-
+  margin-top : 2%;
 }
 
 .navigation ul li {
@@ -119,6 +124,7 @@ width : 100%;
   list-style: none;
   margin-left: 30%;
   font-family: cursive;
+  margin-top : 2%;
 }
 .navigation ul li {
   margin-left : 5%;
@@ -157,6 +163,7 @@ width : 100%;
   list-style: none;
   margin-left: 20%;
   font-family: cursive;
+  margin-top : 3%;
 }
 .navigation ul li {
   margin-left : 5%;
