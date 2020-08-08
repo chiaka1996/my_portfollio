@@ -179,14 +179,14 @@ button{
         width : 400px;
         margin-left : 0;
         margin-right : 3%;
-        box-shadow: 5px 5px 5px 5px  rgb(74, 74, 72);
+        box-shadow: 5px 5px 5px   rgb(74, 74, 72);
         height : 450px;
         text-decoration: none;
         margin-bottom : 1%;
     }
 
     .projectFlex:hover{
-        box-shadow : 10px 10px 10px 10px rgb(74, 74, 72);      
+        box-shadow : 10px 10px 10px  rgb(74, 74, 72);      
     }
 
     .projectName {
