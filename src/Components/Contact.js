@@ -1,29 +1,16 @@
 import React from 'react';
 import '../Css/Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Link} from "react-router-dom";
 
 const Contact = (props) => {
-    const replaceGithub = () => {
-        window.location.replace('https://github.com/chiaka1996');
-    }
 
-    const replaceFacebook = () => {
-        window.location.replace('https://www.facebook.com/profile.php?id=100009145788898');
-    }
-
-    const replaceTwitter = () => {
-        window.location.replace('https://twitter.com/NewtonChiaka');
-    }
-
-    const replaceLinkedIn = () => {
-        window.location.replace('https://www.linkedin.com/in/osuji-chiaka-10b31a196/');
-    }
     return (
         <div ref={props.refProp} className="certification-body">
-                <div className="cert_header"><span>Reach Out To Me!</span></div>
+                <div className="cert_header"><span>Get In Touch!</span></div>
                 <div className="contact-intro">
                 Interested in working together? Wherever you are with your idea or your project, 
-                I'll be happy to help. I am Available for Full-stack Positions, either full-time or Remote
+                I'll be happy to help. I am available for full stack positions, either full-time or remote.
                 </div>
 
                 <div className="mail">
@@ -36,14 +23,23 @@ const Contact = (props) => {
                 </div>
 
                 <div>
+
+                <Link to={{pathname:"https://twitter.com/NewtonChiaka"}}  target='_blank' > 
+            <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" color="skyBlue" className="awesomeLogos"/>
+            </Link>
+
+            <Link to={{pathname:"https://github.com/chiaka1996"}}  target='_blank' > 
+        <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="black" className="awesomeLogos" />
+        </Link>
+
+        <Link to={{pathname:"https://www.linkedin.com/in/osuji-chiaka-10b31a196/"}}  target='_blank' > 
+        <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" color="skyBlue" className="awesomeLogos" />
+        </Link>
+
+        <Link to={{pathname:"https://www.facebook.com/profile.php?id=100009145788898"}}  target='_blank' > 
+        <FontAwesomeIcon icon={['fab', 'facebook']} size="2x" color="blue" className="awesomeLogos" />  
+        </Link>
                 
-         <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" color="skyBlue" className="awesomeLogos" onClick={()=>  replaceTwitter}/>
-
-        <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="black" className="awesomeLogos" onClick={()=>  replaceGithub} />
-
-        <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" color="skyBlue" className="awesomeLogos" onClick={()=>  replaceLinkedIn}/>
-
-    <FontAwesomeIcon icon={['fab', 'facebook']} size="2x" color="blue" className="awesomeLogos" onClick={()=>  replaceFacebook}/>  
                 </div>
                 </div>
             </div>

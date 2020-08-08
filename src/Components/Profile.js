@@ -4,31 +4,11 @@ import ProfilePic from './Images/profilepics_edited.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ReactTypingEffect from 'react-typing-effect';
 import  '../Css/Profile.css';
+import {Link} from 'react-router-dom';
 
 const Profile = (props) => {
 
     const [greetings, setGreetings] = useState('');
-
-    const replaceGithub = () => {
-        window.location.replace('https://github.com/chiaka1996');
-    }
-
-    const replaceResume = () => {
-        window.location.replace('https://chiaka1996.github.io/my-resume/');
-    }
-
-    const replaceFacebook = () => {
-        window.location.replace('https://www.facebook.com/profile.php?id=100009145788898');
-    }
-
-    const replaceTwitter = () => {
-        window.location.replace('https://twitter.com/NewtonChiaka');
-    }
-
-    const replaceLinkedIn = () => {
-        window.location.replace('https://www.linkedin.com/in/osuji-chiaka-10b31a196/');
-    }
-
 
     useEffect (()=> {
         const date = new Date();
@@ -59,18 +39,25 @@ const Profile = (props) => {
 
             <div className='logos'>
 
-         <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" color="skyBlue" className="awesomeLogos" onClick={replaceTwitter} />
+            <Link to={{pathname:"https://twitter.com/NewtonChiaka"}}  target='_blank' > 
+            <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" color="skyBlue" className="awesomeLogos"/>
+            </Link>
 
-        <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="black" className="awesomeLogos" onClick={replaceGithub} />
+            <Link to={{pathname:"https://github.com/chiaka1996"}}  target='_blank' > 
+        <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="black" className="awesomeLogos" />
+        </Link>
 
-        <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" color="skyBlue" className="awesomeLogos" onClick={replaceLinkedIn}/>
+        <Link to={{pathname:"https://www.linkedin.com/in/osuji-chiaka-10b31a196/"}}  target='_blank' > 
+        <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" color="skyBlue" className="awesomeLogos" />
+        </Link>
 
-        <FontAwesomeIcon icon={['fab', 'facebook']} size="2x" color="blue" className="awesomeLogos" onClick={replaceFacebook}/>  
-
+        <Link to={{pathname:"https://www.facebook.com/profile.php?id=100009145788898"}}  target='_blank' > 
+        <FontAwesomeIcon icon={['fab', 'facebook']} size="2x" color="blue" className="awesomeLogos" />  
+        </Link>
     </div>
 
         <div className="Resume-contact">
-           <div className='resume' onClick={replaceResume}> <p>My Resume</p></div>
+         <Link to={{pathname:"https://chiaka1996.github.io/my-resume/"}} className='resume' target='_blank' > <div> <p>My Resume</p></div></Link>
             <div className='contactMe' onClick={()=>props.scrollToRef(props.myContact)}><p>Contact Me</p></div>
         </div>
 
