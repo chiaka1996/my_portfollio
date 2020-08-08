@@ -10,10 +10,11 @@
     border-bottom : 7px solid yellowgreen;
     font-size : 20px;
     font-weight : bold;
+    color : white;
 }
 
 .contact-intro{
-    color : black;
+    color : grey;
     font-size : 15px;
     margin-left : 7%;
     margin-right : 7%;
@@ -47,10 +48,11 @@
     border-bottom : 7px solid yellowgreen;
     font-size : 50px;
     font-weight : bold;
+    color : white;
 }
 
 .contact-intro{
-    color : black;
+    color : grey;
     font-size : 25px;
     margin-left : 7%;
     margin-right : 7%;

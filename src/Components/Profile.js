@@ -15,13 +15,13 @@ const Profile = (props) => {
         const hour = date.getHours();
 
         if(hour < 12) {
-            return setGreetings( <div className="greeting"> Good Morning! <FontAwesomeIcon icon="smile-beam" size="sm" color="black" />, I'm <span className="name"> Chiaka Daniel</span> </div>);
+            return setGreetings( <div className="greeting"> Good Morning! <FontAwesomeIcon icon="smile-beam" size="sm" color="yellow" />, I'm <span className="name"> Chiaka Daniel</span> </div>);
         }
         if(hour >= 12 && hour < 17) {
-            return setGreetings( <div className="greeting"> Good Day!<FontAwesomeIcon icon="smile-beam" size="sm"  color="black" />, I'm <span className="name"> Chiaka Daniel</span></div>);
+            return setGreetings( <div className="greeting"> Good Afternoon!<FontAwesomeIcon icon="smile-beam" size="sm"  color="yellow" />, I'm <span className="name"> Chiaka Daniel</span></div>);
         }
          else{
-        return  setGreetings( <div className="greeting"> Good Evening! <FontAwesomeIcon icon="smile-beam" size="sm" color="black" />, I'm <span className="name"> Chiaka Daniel</span></div>);
+        return  setGreetings( <div className="greeting"> Good Evening! <FontAwesomeIcon icon="smile-beam" size="sm" color="yellow" />, I'm <span className="name"> Chiaka Daniel</span></div>);
          }
          
     }, [ ]);
@@ -44,7 +44,7 @@ const Profile = (props) => {
             </Link>
             
         <Link to={{pathname:"https://github.com/chiaka1996"}}  target='_blank' > 
-        <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="black" className="awesomeLogos" />
+        <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="white" className="awesomeLogos" />
         </Link>
 
         <Link to={{pathname:"https://www.linkedin.com/in/osuji-chiaka-10b31a196/"}}  target='_blank' > 

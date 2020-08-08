@@ -1,6 +1,6 @@
 /* mobile Design */
 .profilePic{
-    margin-top : 32%;
+    margin-top : 26%;
     margin-left : 33%;
 }
 
@@ -16,7 +16,7 @@
 
 .greeting {
     color : grey;
-    font-size: 22px;
+    font-size: 19px;
     font-weight: bold;
     font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

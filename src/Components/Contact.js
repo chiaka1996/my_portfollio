@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Css/Contact.css';
+import '../Css/Contact.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {Link} from "react-router-dom";
 
@@ -25,19 +25,19 @@ const Contact = (props) => {
                 <div>
 
                 <Link to={{pathname:"https://twitter.com/NewtonChiaka"}}  target='_blank' > 
-            <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" color="skyBlue" className="awesomeLogos"/>
+            <FontAwesomeIcon icon={['fab', 'twitter']} size="lg" color="skyBlue" className="awesomeLogos"/>
             </Link>
 
             <Link to={{pathname:"https://github.com/chiaka1996"}}  target='_blank' > 
-        <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="black" className="awesomeLogos" />
+        <FontAwesomeIcon icon={['fab', 'github']} size="lg" color="white" className="awesomeLogos" />
         </Link>
 
         <Link to={{pathname:"https://www.linkedin.com/in/osuji-chiaka-10b31a196/"}}  target='_blank' > 
-        <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" color="skyBlue" className="awesomeLogos" />
+        <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="lg" color="skyBlue" className="awesomeLogos" />
         </Link>
 
         <Link to={{pathname:"https://www.facebook.com/profile.php?id=100009145788898"}}  target='_blank' > 
-        <FontAwesomeIcon icon={['fab', 'facebook']} size="2x" color="blue" className="awesomeLogos" />  
+        <FontAwesomeIcon icon={['fab', 'facebook']} size="lg" color="blue" className="awesomeLogos" />  
         </Link>
                 
                 </div>
