@@ -42,8 +42,8 @@ const Profile = (props) => {
             <Link to={{pathname:"https://twitter.com/NewtonChiaka"}}  target='_blank' > 
             <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" color="skyBlue" className="awesomeLogos"/>
             </Link>
-
-            <Link to={{pathname:"https://github.com/chiaka1996"}}  target='_blank' > 
+            
+        <Link to={{pathname:"https://github.com/chiaka1996"}}  target='_blank' > 
         <FontAwesomeIcon icon={['fab', 'github']} size="2x" color="black" className="awesomeLogos" />
         </Link>
 

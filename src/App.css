@@ -12,8 +12,11 @@ cursor: pointer;
   width : 100%;
 }
 
-.link{
-  color : yellowgreen;
+.cert{
+  color :yellowgreen;
+}
+.cert:hover{
+  color : grey;
 }
 
 .brandName{
@@ -32,6 +35,10 @@ cursor: pointer;
 
 .navigation ul{
   display: none;
+}
+
+.navigation ul li:hover{
+  color : grey;
 }
 
 .barIcon {
