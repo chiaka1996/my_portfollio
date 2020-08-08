@@ -181,6 +181,7 @@ button{
         box-shadow: 5px 5px 5px grey;
         height : 450px;
         text-decoration: none;
+        margin-bottom : 1%;
     }
 
     .projectFlex:hover{
