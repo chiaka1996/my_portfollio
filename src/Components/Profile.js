@@ -10,6 +10,8 @@ const Profile = (props) => {
 
     const [greetings, setGreetings] = useState('');
 
+    const [opac, setOpacity] = useState(false);
+
     useEffect (()=> {
         const date = new Date();
         const hour = date.getHours();
@@ -28,7 +30,7 @@ const Profile = (props) => {
 
  
     return (
-        <div className="profile">
+        <div className={opac ? "profile" : "profile2" } onLoad={()=>setOpacity(true)}>
             <div className="profilePic"> <img src={ProfilePic} alt="profile pic"  /> </div>
             <div className="introduction_name">{greetings}</div>
             <div className="typing-effect">

@@ -1,7 +1,9 @@
+
 .aboutBody{
     margin-top : 48%;
     margin-bottom : 45%;
 }
+
 
 .about_me{
     font-family : 'Times New Roman', Times, serif;
@@ -14,7 +16,7 @@
 
 .aboutBody div{
     margin-top: 3%;
-    margin-left : 4%;
+    margin-left : 4%;  
     margin-right : 1%;
 }
 

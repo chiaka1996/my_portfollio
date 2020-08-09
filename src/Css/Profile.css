@@ -1,6 +1,14 @@
 /* mobile Design */
+.profile{
+    opacity : 1;
+    transition: opacity 15s;
+}
+
+.profile2{
+    opacity : 0;
+}
 .profilePic{
-    margin-top : 21%;
+    margin-top : 18%;
     margin-left : 33%;
 }
 
