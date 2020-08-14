@@ -79,14 +79,6 @@ button{
     font-size : 12px;
 }
 
-.projectHeader span {
-    font-weight : bold;
-    font-size : 34px;
-    border-bottom : 7px solid yellowgreen;
-    font-family : 'Times New Roman', Times, serif;
-    color : black;
-}
-
 .see-more {
     margin-left : 30%;
     outline : none;
