@@ -1,4 +1,6 @@
 .projectBody{
+    padding-top: 5%;
+    background-color : white;
     color : black;
     margin-bottom : 10%;
 }
@@ -6,9 +8,10 @@
 
 
 .projectHeader{ 
-    margin-top : 10%;
+    margin-top : 4;
     margin-left : 35%;
     margin-bottom : 5%;
+    color : black;
 }
 
 .projectHeader span {
@@ -16,7 +19,7 @@
     font-size : 34px;
     border-bottom : 7px solid yellowgreen;
     font-family : 'Times New Roman', Times, serif;
-    color : white;
+    color : black;
 }
 
 .projects{
@@ -87,7 +90,7 @@ button{
 
 .see-more button{
     width : 130px;
-    height : 30px;
+    height : 30px; 
     font-size : 16px;
     border-radius : 50px;
 }
@@ -142,7 +145,7 @@ button{
 @media only screen and (min-width: 1010px)  {
 
     .projectHeader{
-        margin-top : 10%;
+        margin-top : 2%;
         margin-left : 45%;
         margin-bottom : 5%;
     }
@@ -152,7 +155,7 @@ button{
         font-size : 34px;
         border-bottom : 7px solid yellowgreen;
         font-family : 'Times New Roman', Times, serif;
-        color : white;
+        color : black;
     }
 
     .projects{
@@ -178,7 +181,7 @@ button{
     }
 
     .projectFlex:hover{
-        box-shadow : 10px 10px 10px  rgb(74, 74, 72);      
+        box-shadow : 15px 15px 15px  rgb(74, 74, 72);      
     }
 
     .projectName {

@@ -1,7 +1,10 @@
 
 .aboutBody{
-    margin-top : 48%;
-    margin-bottom : 45%;
+    margin-top : 0;
+    padding-top : 7%;
+    padding-bottom : 17%;
+    background-color : #7B7D7D;
+    margin-bottom : 0;
 }
 
 
@@ -21,7 +24,7 @@
 }
 
 .aboutBody div p {
-    color : grey;
+    color : white;
     font-family : 'Times New Roman', Times, serif;
 }
 
@@ -63,11 +66,11 @@
 
 @media only screen and (min-width: 1010px)  {
     .aboutBody{
-        margin-top : 20%;
-        margin-bottom : 30%;
+       background-color : #7B7D7D;
     }
 
     .about_me{
+
         font-size : 40px;
         font-weight : bold;
         margin-left: 20%;
@@ -104,8 +107,7 @@
 
 @media only screen and (max-width: 1030px) and (min-width: 1020px)  {
     .aboutBody{
-        margin-top : 45%;
-        margin-bottom : 50%;
+       background-color : #7B7D7D;
     }
 
     .about_me{

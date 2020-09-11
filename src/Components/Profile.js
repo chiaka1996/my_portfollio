@@ -1,6 +1,5 @@
 /* eslint-disable no-restricted-globals */
 import React, {useState, useEffect} from 'react';
-import ProfilePic from './Images/profilepics_edited.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ReactTypingEffect from 'react-typing-effect';
 import  '../Css/Profile.css';
@@ -31,7 +30,8 @@ const Profile = (props) => {
  
     return (
         <div className={opac ? "profile" : "profile2" } onLoad={()=>setOpacity(true)}>
-            <div className="profilePic"> <img src={ProfilePic} alt="profile pic"  /> </div>
+            <div className="profilePic"> <img src="https://res.cloudinary.com/chiaka1996/image/upload/v1599840039/portfolio-images/profilepics_edited_filli2.jpg"
+             alt="osuji chiaka daniel"  /> </div>
             <div className="introduction_name">{greetings}</div>
             <div className="typing-effect">
                 <ReactTypingEffect

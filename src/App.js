@@ -28,6 +28,7 @@ function App() {
     <div className="App">
 
     <Router>
+      
     <Nav scrollToRef = {scrollToRef} 
     myRef ={myRef}
     myContact = {myContact}
@@ -36,6 +37,7 @@ function App() {
     <Profile
     scrollToRef = {scrollToRef}
      myContact = {myContact}  />
+
     <About refProp={myRef}/>
     <Project  refProp = {myProject} />
     <Contact refProp = {myContact} />

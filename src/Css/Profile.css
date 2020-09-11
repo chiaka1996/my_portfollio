@@ -1,11 +1,12 @@
 /* mobile Design */
 .profile{
-    opacity : 1;
+   opacity : 1;
     transition: opacity 15s;
 }
 
 .profile2{
     opacity : 0;
+    margin-bottom: 0;  
 }
 .profilePic{
     margin-top : 13%;

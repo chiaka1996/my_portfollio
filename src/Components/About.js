@@ -6,7 +6,7 @@ const About = (props) => {
     return (
         <div  ref={props.refProp} className= "aboutBody">
             <div ><span className="about_me">About Me & What I do</span></div>
-            <div>
+            <div className='about-explanation'>
             <p>I'm a motivated full stack Developer with great passion for building 
             excellent softwares. I build fun stuffs using mostly php, JavaScript and React. I offer 2 years of development experience,
             a strong aptitude for learning new technologies,
