@@ -1,0 +1,220 @@
+/* mobile view */
+.testimonial_container {
+    margin-top: 5%;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-top: 5%;
+}
+.testimonial_header { 
+    margin-bottom: 3%;
+    text-align: center;
+}
+.testimonial_header span {
+    /* margin-left: 30%; */
+    margin-left: 0;
+    font-size: 25px;
+    border-bottom: 7px solid #20AAF3;
+    font-family: 'Fredoka One';
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.testimonial_grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+    border-radius: 20px;
+}
+
+.testimonial_grid_item1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 5px;
+    height: 100%;
+}
+
+.grid_item1 {
+    border-radius: 20px;
+    text-align: center;
+    background-color: lightgray;
+    padding: 20% 15% 20% 15%;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.testimonial_grid_item2 {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 5px;
+    height: 100%;
+}
+
+.grid_item2 {
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20% 15% 20% 15%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.grid_item2 span i {
+    color: #64B409;
+    font-family: 'Fredoka One';
+}
+
+.grid_item1 span i {
+    color: #64B409;
+    font-family: 'Fredoka One';
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px)  { 
+    .testimonial_header span {
+        /* margin-left: 35%; */
+        margin-left: 0;
+        font-size: 35px;
+    }
+
+    .testimonial_grid {
+        font-size: 21px;
+    }
+
+} 
+
+@media only screen and (min-width: 801px) and (max-width: 1069px)  { 
+
+    .testimonial_container {
+        margin-top: 5%;
+        margin-left: 1px;
+        margin-right: 1px;
+        padding-top: 5%;
+    }
+    .testimonial_header { 
+        margin-bottom: 3%;
+    }
+    .testimonial_header span {
+        /* margin-left: 38%; */
+        font-size: 45px;
+    }
+    
+    .testimonial_grid {
+        display: grid;
+        grid-template-columns: 32% 67%;
+        font-size: 20px;
+        grid-column-gap: 1%;
+        border-radius: 20px;
+    }
+    
+    .testimonial_grid_item1 {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-row-gap: 5%;
+        height: 500px;
+    }
+    
+    .grid_item1 {
+        border-radius: 20px;
+        text-align: center;
+        background-color: lightgray;
+        padding: 20% 15% 20% 15%;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .testimonial_grid_item2 {
+        margin-top: 0;
+        display: grid;
+        grid-template-rows: 24.5% 24.5% 24.5% 24.5%;
+        grid-row-gap: 2%;
+        height: 500px;
+    }
+    
+    .grid_item2 {
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        padding: 5% 15% 5% 15%; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .grid_item2 span i {
+        color: #64B409;
+        font-family: 'Fredoka One';
+    }
+    
+    .grid_item1 span i {
+        color: #64B409;
+        font-family: 'Fredoka One';
+    }
+
+}
+
+
+/* desktop view */
+@media only screen and (min-width: 1070px)  { 
+    .testimonial_container {
+        margin-top: 5%;
+        margin-left: 4%;
+        margin-right: 4%;
+        padding-top: 5%;
+    }
+    .testimonial_header { 
+        margin-bottom: 3%;
+    }
+    /* .testimonial_header span {
+        margin-left: 44%;
+    } */
+    
+    .testimonial_grid {
+        display: grid;
+        grid-template-columns: 32% 67%;
+        grid-column-gap: 1%;
+        border-radius: 20px;
+    }
+    
+    .testimonial_grid_item1 {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-row-gap: 5%;
+        height: 450px;
+    }
+    
+    .grid_item1 {
+        border-radius: 20px;
+        text-align: center;
+        background-color: lightgray;
+        padding: 20% 15% 20% 15%;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .testimonial_grid_item2 {
+        margin-top: 0;
+        display: grid;
+        grid-template-rows: 24.5% 24.5% 24.5% 24.5%;
+        grid-row-gap: 2%;
+        height: 450px;
+    }
+    
+    .grid_item2 {
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        padding: 5% 15% 5% 15%; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .grid_item2 span i {
+        color: #64B409;
+        font-family: 'Fredoka One';
+    }
+    
+    .grid_item1 span i {
+        color: #64B409;
+        font-family: 'Fredoka One';
+    }
+    
+}

@@ -2,259 +2,247 @@
     padding-top: 5%;
     background-color : white;
     color : black;
-    margin-bottom : 10%;
-}
-
-
+    margin-bottom : 4%;
+} 
 
 .projectHeader{ 
     margin-top : 4;
-    margin-left : 35%;
+    /* margin-left : 35%; */
     margin-bottom : 5%;
     color : black;
+    text-align: center;
 }
 
 .projectHeader span {
-    font-weight : bold;
-    font-size : 34px;
-    border-bottom : 7px solid yellowgreen;
-    font-family : 'Times New Roman', Times, serif;
+    font-size : 27px;
+    border-bottom : 7px solid #20AAF3;
+    font-family: 'Fredoka One';
     color : black;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;;
 }
 
 .projects{
-    display : flex;
+    display : grid;
+    grid-template-columns: 100%;
+    /* grid-column-gap: 5%;; */
+    /* grid-row-gap: 15%; */
     flex-direction: column;
-    margin-left : 2%;
-    margin-right : 2%;
-    margin-bottom : 0;
-}
-
-    img{
-        width: 100%;
-        height : 150px;
-    }
-
-.projectFlex {
-    width : 92%;
-    margin-left : 3%;
-    margin-right : 2%;
-    box-shadow: 5px 5px 5px grey;
-    height : 485px;
-    text-decoration: none;
-    margin-bottom: 7%;
-    background-color : white;
-}
-
-.projectFlex:active{
-    box-shadow : 20px 20px 20px grey;
-}
-
-.projectName {
-    margin-top : 10%;
-    margin-bottom : 5%;
-    color : green;
-    font-family : bold;
-    font-size : 20px;
-    font-family : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-section {
-    margin-left : 5%;
-    margin-right : 7%;
-}
-
-.statement {
-    font-family : 'Times New Roman', Times, serif;
-    color : grey;
-    font-family : bold;
-    font-size : 19px;
+    margin-left : 4%;
+    margin-right : 4%;
     margin-bottom : 13%;
 }
 
-button{
-    border-radius : 50px;
-    border : 1px solid yellowgreen;
-    font-weight : bold;
-    height : 35px;
-    background-color : white;
-    margin-right : 2%;
-    font-size : 12px;
+.projectGrid {
+    margin-bottom: 8%;
 }
 
-.see-more {
-    margin-left : 30%;
-    outline : none;
+.projectGrid:hover  {
+    border-radius: 20px;
+   box-shadow: 0px 5px 5px 0px;
 }
-
-
-.see-more button{
-    width : 130px;
-    height : 30px; 
-    font-size : 16px;
-    border-radius : 50px;
-}
-
-.see-more button:active{
-    color : white;
-    background-color : yellowgreen;
-    outline: none;
-    border-radius : 50px;
-    border: 1px solid yellowgreen;
-}
-
-@media only screen and (max-width: 770px) and (min-width: 765px)  {
-  
-    /* navigation style for tablet ipad*/
-    img{
-        width: 100%;
-        height : 200px;
-    }
-
-.projectFlex {
-    width : 95%;
-    margin-left : 2%;
-    margin-right : 2%;
-    box-shadow: 5px 5px 5px grey;
-    height : 540px;
-    text-decoration: none;
-    margin-bottom: 7%;
-}
-
-.projectName {
-    font-size : 23px;
-}
-
-.statement {
-    font-size : 24px;
-}
-
-button{
-    font-size : 18px;
-}
-
-.see-more {
-    margin-left : 40%;
-    outline : none;
-}
-
-
+.projectGrid img {
+    border-radius: 20px;
+    width: 100%;
+    height: 140px;
 
 }
 
-@media only screen and (min-width: 1010px)  {
+.projectGrid section {
+    margin-top: 5%;
+   text-align: center;
+   margin-bottom: 1.5%;
+}
 
-    .projectHeader{
-        margin-top : 2%;
+.projectGrid section h5 {
+    font-family: 'Fredoka One';
+ }
+
+ .projectGrid section p {
+    font-family: 'georgia';
+ }
+
+ .projectGrid section button {
+    background-color:  #20AAF3;
+    border-radius: 5px;
+    border: 1px solid #20AAF3;
+    color: white;
+ }
+
+ .projectName {
+     color: white;
+     font-family: georgia;
+ }
+
+ .projectGrid section button:hover {
+     color: black;
+ }
+
+ .projectName:hover {
+     color: black;
+ }
+
+.see_more {
+    text-align: center;
+    margin-top: 25%;
+}
+
+.see_more button {
+    background-color: #64B409;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #64B409;
+    width: 45%;
+    font-family: 'Fredoka One'
+}
+
+.see_more button:hover {
+    color: black;
+    background-color: rgb(212, 208, 208);
+    border: 1px solid white;
+}
+
+
+/* ipad view */
+@media only screen and (min-width: 700px) and (max-width: 800px)  { 
+    /* .projectHeader{ 
         margin-left : 45%;
-        margin-bottom : 5%;
-    }
-    
+    } */
+
     .projectHeader span {
-        font-weight : bold;
-        font-size : 34px;
-        border-bottom : 7px solid yellowgreen;
-        font-family : 'Times New Roman', Times, serif;
+        font-size : 35px;
+    }
+
+    .projects{
+        display : grid;
+        grid-template-columns: 48% 48%;
+        grid-column-gap: 2%;;
+        grid-row-gap: 5%;
+        flex-direction: column;
+        margin-left : 1px;
+        margin-right : 1px;
+        margin-bottom : 13%;
+    }
+
+    .projectGrid {
+        margin-bottom: 0;
+    }
+
+    .see_more {
+        text-align: center;
+        margin-top: 28%; 
+    }
+
+    .see_more button {
+        background-color: #64B409;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid #64B409;
+        width: 35%;
+        font-family: 'Fredoka One'
+    }
+}
+
+/* ipad pro */
+@media only screen and (min-width: 801px) and (max-width: 1070px)  { 
+    /* .projectHeader{ 
+        margin-left : 40%;
+    } */
+
+    .projectHeader span {
+        font-size : 45px;
+    }
+
+    .projects{
+        display : grid;
+        grid-template-columns: 48% 48%;
+        grid-column-gap: 4%;;
+        grid-row-gap: 5%;
+        flex-direction: column;
+        margin-left : 1px;
+        margin-right : 1px;
+        margin-bottom : 13%;
+    }
+
+    .projectGrid section p {
+        font-family: 'georgia';
+        font-size: 20px;
+     }
+    .projectGrid {
+        margin-bottom: 0;
+    }
+
+    .see_more {
+        text-align: center;
+        margin-top: 25%; 
+    }
+
+    .see_more button {
+        background-color: #64B409;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid #64B409;
+        width: 35%;
+        font-size: 23px;
+        font-family: 'Fredoka One'
+    }
+}
+
+
+/* desktop view */
+@media only screen and (min-width: 1071px)  {
+    .projectHeader{ 
+        margin-top : 4;
+        /* margin-left : 47%; */
+        margin-bottom : 5%;
         color : black;
     }
 
     .projects{
-        display : flex;
-        flex-direction : row;
-        margin-left : 2%;
-        margin-bottom : 4%;
-    }
-
-        img{
-            width: 400px;
-            height : 150px;
-        }
-
-    .projectFlex {
-        width : 400px;
-        margin-left : 0;
-        margin-right : 3%;
-        box-shadow: 5px 5px 5px   rgb(74, 74, 72);
-        height : 450px;
-        text-decoration: none;
-        margin-bottom : 1%;
-    }
-
-    .projectFlex:hover{
-        box-shadow : 15px 15px 15px  rgb(74, 74, 72);      
-    }
-
-    .projectName {
-        margin-top : 10%;
-        margin-bottom : 5%;
-        color : green;
-        font-family : bold;
-        font-size : 20px;
-        font-family : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-
-    section {
-        margin-left : 5%;
-        margin-right : 7%;
-    }
-
-    .statement {
-        font-family : 'Times New Roman', Times, serif;
-        color : grey;
-        font-family : bold;
-        font-size : 21px;
+        display : grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-column-gap: 5%;;
+        grid-row-gap: 15%;
+        flex-direction: column;
+        margin-left : 4%;
+        margin-right : 4%;
         margin-bottom : 13%;
     }
 
-    button{
-        border-radius : 50px;
-        border : 1px solid yellowgreen;
-        font-weight : bold;
-        height : 35px;
-        background-color : white;
-        margin-right : 2%;
-        font-size : 12px;
+    .projectGrid img {
+        border-radius: 20px;
+        width: 100%;
+        height: 140px;
+    
     }
 
-    .see-more {
-        margin-left : 45%;
-        outline : none;
+    .projectGrid:hover  {
+        border-radius: 20px;
+       box-shadow: 0px 5px 5px 0px;
     }
-
-    .see-more button{
-        width : 130px;
-        height : 30px;
-    }
-
-    .see-more button:hover{
-        color : white;
-        background-color : yellowgreen;
+    .projectGrid img {
+        border-radius: 20px;
+        width: 100%;
+        height: 140px;
+    
     }
     
-
-
-}
-
-@media only screen and (max-width: 1030px) and (min-width: 1020px)  {
-
-    /* navigation style for tablet ipad pro*/
-    img{
-        width: 310px;
-        height : 150px;
+    .projectGrid section {
+        margin-top: 5%;
+       text-align: center;
+       margin-bottom: 1.5%;
     }
 
-.projectFlex {
-    width : 310px;
-    margin-right : 3%;
-    box-shadow: 5px 5px 5px grey;
-    height : 450px;
-    text-decoration: none;
-}
+    .projectGrid {
+        margin-bottom: 0;
+    }
 
-button{
-    font-size : 10px;
-}
-
-
-
+    .see_more button {
+        background-color: #64B409;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid #64B409;
+        width: 15%;
+        font-family: 'Fredoka One'
+    }
 }

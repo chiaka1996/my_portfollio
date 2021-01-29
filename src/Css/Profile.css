@@ -1,306 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
 /* mobile Design */
-.profile{
-   opacity : 1;
-    transition: opacity 15s;
+.profile {
+    margin-top: 17%;
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
-.profile2{
-    opacity : 0;
-    margin-bottom: 0;  
-}
-.profilePic{
-    margin-top : 13%;
-    margin-left : 33%;
-}
-
-.profilePic img {
-    border-radius:  50%;
-    width : 120px;
-}
-
-.introduction_name {
-    margin-left : 2%;
-    display: flex;
-}
-
-.greeting {
-    color : grey;
-    font-size: 19px;
-    font-weight: bold;
-    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.name{
-    color : yellowgreen;
-    font-size : 16px;
-    font-weight : bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-bottom: 0;
-    border-bottom: 5px solid yellowgreen;
-}
-
-.typing-effect{
-    margin-top : 2%;
-    margin-left : 12%;
-    color : grey;
-    font-size : 14px;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.logos{
-    margin-left : 20%;
-    margin-top : 4%;
-}
-
-.awesomeLogos{
-    margin-right : 8%;
-}
-
-.Resume-contact{
-    display: flex;
-    margin-top : 11%;
-    margin-left : 5%;
+.profile_grid {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 50% 50%;
     
 }
 
-.resume{
-    border : 3px solid yellowgreen;
-    width : 40%;
-    text-decoration-color: white;
-    height : 65px;
-    margin-left : 4%;
-    color :grey;
-    font-size : 18px;  
-    border-radius : 10px; 
+.introduction_name {
+    font-family: 'Fredoka One';
+    /* padding-left: 2.5%; */
+    padding-left: 0;
 }
 
-.resume:active{
-    color : white;
-    background-color: yellowgreen;
+.greeting {
+    font-size: 19px;
+    text-align: center;
+    }
+
+.profile_grid_item img {
+    width: 100%;
+    height: 300px;
+}
+ .typing_effect {
+     /* margin-left: 10%; */
+     margin-left: 0;
+     font-family: 'Fredoka one';
+     text-align: center;
+}
+.grid_about {
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-top: 18.5%;
 }
 
-.resume p{
-    margin-top : 15%;
-    margin-left : 15%;
+.name {
+    border-bottom: 5px solid #64B409;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
-.contactMe{
-    border : 3px solid yellowgreen;
-    width : 40%;
-    height : 60px;
-    margin-left : 4%;
-    color : grey;
-    font-size : 18px;
-    border-radius : 10px;
+.grid_about p {
+    margin-top: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.contactMe:active{
-    color : white;
-    background-color: yellowgreen;
+.resumeButton button {
+    width: 25%;
+    height: 30px;
+    background-color: #64B409;
+    color: black;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    margin-left: 35%;
+    border: 1px solid #64B409;
 }
 
-.contactMe p{
-    margin-top : 15%;
-    margin-left : 15%;
+.resumeButton button:hover {
+color: white;
 }
 
 .ArrowDown {
+    color:  #64B409;
     margin-left : 46%;
     position : relative;
     animation-name : example;
     animation-duration : 1s;
     animation-iteration-count: infinite;
-}
+} 
 
 @keyframes example {
     from {transform:translateY(0);}
     to {transform:translateY(20%);}
   }
 
-  /* desktop view */
-  @media only screen and (min-width: 766px)  { 
-    .profilePic{
-        margin-top : 7%;
-        margin-left : 41%;
-    }
-    
-    .profilePic img {
-        border-radius:  50%;
-        width : 140px;
+  /* ipad design */
+  @media only screen and (min-width: 710px) and (max-width: 800px)  { 
+    .profile {
+        margin-top: 1%;
+        padding-top: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
     }
     
     .introduction_name {
-        margin-left : 20%;
+        font-family: 'Fredoka One';
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .profile_grid_item img {
+        width: 100%;
+        height: 510px;
     }
     
     .greeting {
-        color : grey;
-        font-size: 50px;
-        font-weight: bold;
-        font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    .name{
-        color : yellowgreen;
-        font-size : 48px;
-        font-weight : bold;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding-bottom: 0;
-        border-bottom: 5px solid yellowgreen;
-    }
-    
-    .typing-effect{
-        margin-top : 1%;
-        margin-left : 34%;
-        color : grey;
-        font-size : 22px;
-        font-weight: bold;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    
-    .logos{
-        margin-left : 39%;
-        margin-top : 2%;
-    }
-    
-    .awesomeLogos{
-        margin-right : 5%;
-    }
-    
-    .Resume-contact{
-        display: flex;
-        margin-top : 2%;
-        margin-left : 26%;
-        
-    }
-    
-    .resume{
-        border : 3px solid yellowgreen;
-        width : 23%;
-        height : 60px;
-        margin-left : 4%;
-        color :grey;
-        font-size : 18px;   
-        border-radius : 10px;
-    }
-    .resume:hover{
-        color : white;
-        background-color: yellowgreen;
-    }
-    
-    .resume p{
-        margin-top : 8%;
-        margin-left : 25%;
-    }
-    
-    .contactMe{
-        border : 3px solid yellowgreen;
-        width : 23%;
-        height : 60px;
-        margin-left : 4%;
-        color : grey;
-        font-size : 18px;
-        border-radius : 10px;
-    }
-    
-    .contactMe p{
-        margin-top : 8%;
-        margin-left : 25%;
+        font-size: 40px;
+        }
+
+        .typing_effect {
+            margin-left: 0;
+            font-family: 'Fredoka one';
+            font-size: 22px;
+            text-align: center;
+       }
+
+       .grid_about {
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-top: 10.5%;
     }
 
-    .contactMe:hover{
-        color : white;
-        background-color: yellowgreen;
+       .grid_about p {
+        margin-top: 0.5%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 22px;
+        padding: 0 2px 0 2px;
     }
-    .ArrowDown {
-        margin-left : 46%;
-        animation-name : example;
-        animation-duration : 1s;
-        animation-iteration-count: infinite;
+
+    .resumeButton button {
+        width: 25%;
+        height: 50px;
+        background-color: #64B409;
+        color: black;
+        border-radius: 5px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 19px;
+        margin-left: 35%;
+        border: 1px solid #64B409;
+    }
+
+}
+
+/* ipad pro */
+@media only screen and (min-width: 800px) and (max-width: 1070px)  { 
+    .profile {
+        margin-top: 1%;
+        padding-top: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .profile_grid_item img {
+        width: 100%;
+        height: 655px;
     }
     
-    @keyframes example {
-        from {transform:translateY(0);}
+    .introduction_name {
+        font-family: 'Fredoka One';
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .greeting {
+        font-size: 45px;
+        }
+
+        .typing_effect {
+            margin-left: 0;
+            font-family: 'Fredoka one';
+            font-size: 24px;
+            text-align: center;
+       }
+
+       .grid_about {
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-top: 13.5%;
+    }
+
+       .grid_about p {
+        margin-top: 0.5%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 29px;
+        padding: 0 2px 0 2px;
+    }
+
+    .resumeButton button {
+        width: 25%;
+        height: 60px;
+        background-color: #64B409;
+        color: black;
+        border-radius: 5px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 21px;
+        margin-left: 35%;
+        border: 1px solid #64B409;
+    }
+}
+
+/* desktop design */
+@media only screen and (min-width: 1071px)  { 
+.profile {
+    margin-top: 3.3%;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 2%;
+    
+}
+
+.profile_grid {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+.introduction_name {
+    font-family: 'Fredoka One';
+    padding-left: 5%;
+}
+.profile_grid_item img {
+    width: 70%;
+    height: 525px;
+}
+ .typing_effect {
+     margin-left: 18%;
+     font-family: 'Fredoka one';
+}
+.grid_about {
+    padding-left: 2%;
+    padding-right: 13%;
+    margin-top: 23.5%;
+}
+
+.greeting {
+    font-size: 27px;
+    }
+
+.name {
+    border-bottom: 5px solid #64B409;
+}
+
+.grid_about p {
+    margin-top: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.resumeButton button {
+    width: 25%;
+    height: 30px;
+    background-color: #64B409;
+    color: black;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    margin-left: 35%;
+    border: 1px solid #64B409;
+}
+
+.resumeButton button:hover {
+color: white;
+}
+
+
+.ArrowDown {
+    color:  #64B409;
+    margin-left : 46%;
+    position : relative;
+    animation-name : example;
+    animation-duration : 1s;
+    animation-iteration-count: infinite;
+} 
+
+@keyframes example {
+    from {transform:translateY(0);}
     to {transform:translateY(20%);}
-      }
   }
+}
 
-  @media only screen and (max-width: 1030px) and (min-width: 1020px)  {
 
-    /* Profile style for tablet ipad pro*/
-
-    .profilePic{
-        margin-top : 37%;
-        margin-left : 45%;
-    }
-
-    .profilePic img {
-        border-radius:  50%;
-        width : 128px;
-    }
-
-    .greeting {
-        font-size : 40px;
-    }
-
-    .Resume-contact{
-        display: flex;
-        margin-top : 2%;
-        margin-left : 30%;
-        
-    }
-  }
-
-  @media only screen and (max-width: 770px) and (min-width: 765px)  {
-
-    /* Profile style for tablet ipad*/
-
-    .profilePic{
-        margin-top : 37%;
-        margin-left : 37%;
-    }
-
-    .profilePic img {
-        border-radius:  50%;
-        width : 210px;
-    }
-
-    .introduction_name {
-        margin-left : 6%;
-    }
-
-    .Resume-contact{
-        display: flex;
-        margin-top : 2%;
-        margin-left : 26%;
-        
-    }
-    .resume{
-        
-        width : 28%;
-    }
-
-    .greeting {
-        font-size : 40px;
-    }
-    
-    .resume p{
-        margin-top : 8%;
-        margin-left : 25%;
-    }
-    
-    .contactMe{
-        width : 28%;
-    }
-    
-    .contactMe p{
-        margin-top : 8%;
-        margin-left : 25%;
-    }
-    
-    .ArrowDown {
-        margin-left : 50%;
-        
-    }
-  }

@@ -4,6 +4,7 @@ import Profile from './Components/Profile';
 import About from './Components/About';
 import Project from './Components/Projects';
 import Contact from './Components/Contact';
+import Testimonial from './Components/Testimonial';
 import {BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -21,6 +22,8 @@ function App() {
 
      const myProject = useRef(null);
 
+     const myTestimonial = useRef(null);
+
      const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
   return (
@@ -33,14 +36,14 @@ function App() {
     myRef ={myRef}
     myContact = {myContact}
     myProject = {myProject} 
+    myTestimonial = {myTestimonial}
     /> 
-    <Profile
-    scrollToRef = {scrollToRef}
-     myContact = {myContact}  />
+    <Profile />
 
     <About refProp={myRef}/>
-    <Project  refProp = {myProject} />
-    <Contact refProp = {myContact} />
+     <Project  refProp = {myProject} />
+    <Testimonial refProp={myTestimonial} /> 
+    <Contact refProp = {myContact} /> 
   </Router>
     </div>
   );
