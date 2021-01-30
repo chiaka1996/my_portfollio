@@ -5,7 +5,7 @@
     color: white;
     font-family: 'Fredoka One';
     height: 850px;
-    width: 80%;
+    width: 90%;
     position: fixed;
     z-index: 600;
     opacity: 0.8;
@@ -15,13 +15,13 @@
 }
 
 .sideBarContainer {
-    transform: translateX(1%);
+    transform: translateX(0);
     transition: transform 1s;
     background-color: black;
     color: white;
     font-family: 'Fredoka One';
     height: 850px;
-    width: 80%;
+    width: 90%;
     position: fixed;
     z-index: 600;
     opacity: 0.8;
