@@ -221,7 +221,9 @@ color: white;
     height: 525px;
 }
  .typing_effect {
-     margin-left: 18%;
+     /* margin-left: 18%; */
+     margin-left: 0;
+     text-align: center;
      font-family: 'Fredoka one';
 }
 .grid_about {
