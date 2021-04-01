@@ -51,7 +51,7 @@ const Projects = (props) => {
             </div>
 
             <div className="projectGrid">
-            <img src="https://res.cloudinary.com/chiaka1996/image/upload/v1599838461/portfolio-images/project4_cipsyf.jpg"
+            <img src="https://res.cloudinary.com/chiaka1996/image/upload/v1617298657/portfolio-images/newzzarpro_b9n5oe.jpg"
                  alt="zzar event pro website" />
                 <section>
                     <h5>Zzar Website</h5>
