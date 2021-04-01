@@ -48,7 +48,7 @@ const Profile = (props) => {
           </p>
 
           <div className="resumeButton">
-          <Link to={{pathname:"https://chiaka1996.github.io/my-resume/"}} className='resume' target='_blank' >
+          <Link to={{pathname:"https://docs.google.com/document/d/1eG1NzBiaJNYSRhHbnkMPjCBRvuZn2Jezj_KRP-WPyjg/edit?usp=sharing"}} className='resume' target='_blank' >
           <button>My Resume</button>
           </Link>
            </div>

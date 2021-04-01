@@ -55,8 +55,10 @@ const Projects = (props) => {
                  alt="zzar event pro website" />
                 <section>
                     <h5>Zzar Website</h5>
-                <p className="statement">This is a Simple frontend  Event planning website design, that is user friendly.</p>
-                      <Link to={{pathname:"https://chiaka1996.github.io/zzarweb/"}} className='projectName' target='_blank' >
+                <p className="statement">This is a Simple Event planning website, that is user friendly,
+                built with html, css, node.js, bootstrap, express, mongoDb.
+                </p>
+                      <Link to={{pathname:"https://zzarpro.netlify.app/"}} className='projectName' target='_blank' >
                         <button>Live Link</button>
                     </Link>    
                 </section>
