@@ -12,40 +12,72 @@ const Projects = (props) => {
         <div className="projects">
 
         <div className="projectGrid">
-            <img src="https://res.cloudinary.com/chiaka1996/image/upload/v1611594669/noforget_nhqirn.jpg"
+            <img 
+            src="https://res.cloudinary.com/chiaka1996/image/upload/v1611594669/noforget_nhqirn.jpg"
              alt="raystore website" />
                 <section>
                <h5>NOFORGET</h5>
-                <p className="statement">This is a simple reminder app, built with vue.js,Node.js,express and mongoDb. </p>
+                <p className="statement">
+                This is a simple reminder app, built with vue.js,Node.js,express and mongoDb. 
+                </p>
                 
-                <Link to={{pathname:"https://noforget.netlify.app"}} className='projectName' target='_blank' >
-                <button>Live Link</button>
+                <Link 
+                to={{pathname:"https://noforget.netlify.app"}} 
+                className='projectName' 
+                target='_blank' 
+                >
+                <button>
+                Live Link
+                </button>
                 </Link>    
                 </section>     
             </div>
 
-        <div className="projectGrid">
-            <img src="https://res.cloudinary.com/chiaka1996/image/upload/v1611594696/portfolio_ybj9ok.jpg"
-             alt="raystore website" />
+        <div 
+        className="projectGrid"
+        >
+            <img 
+            src="https://res.cloudinary.com/chiaka1996/image/upload/v1611594696/portfolio_ybj9ok.jpg"
+             alt="raystore website"
+              />
                 <section>
                <h5>MY PORTFOLIO</h5>
-                <p className="statement">YEEPE!!!. you are here. my portfolio was built using react. </p>
+                <p 
+                className="statement">
+                YEEPE!!!. you are here. my portfolio was built using react.
+                 </p>
                 
-                <Link to={{pathname:"https://chiakadaniel.netlify.app"}} className='projectName' target='_blank' >
-                <button>Live Link</button>
+                <Link 
+                to={{pathname:"https://chiakadaniel.netlify.app"}} 
+                className='projectName' 
+                target='_blank'
+                >
+                <button>
+                Live Link
+                </button>
                 </Link>    
                 </section>     
             </div>
 
             <div className="projectGrid">
-            <img src="https://res.cloudinary.com/chiaka1996/image/upload/v1599838549/portfolio-images/raystore_racuda.jpg"
-             alt="raystore website" />
+            <img 
+            src="https://res.cloudinary.com/chiaka1996/image/upload/v1599838549/portfolio-images/raystore_racuda.jpg"
+             alt="raystore website"
+            />
                 <section>
                <h5> RAYSTORE</h5>
-                <p className="statement">This is a basic e-commerce site, it was built using MERN stack for frontend and backend. </p>
+                <p className="statement">
+                This is a basic e-commerce site, it was built using MERN stack.<br/>
+                <i>(still working on it).</i> 
+                </p>
                 
-                <Link to={{pathname:"https://sheltered-river-47123.herokuapp.com/cloths"}} className='projectName' target='_blank' >
-                <button>Live Link</button>
+                <Link 
+                to={{pathname:"https://chiakastore.herokuapp.com/"}} 
+                className='projectName' 
+                target='_blank' >
+                <button>
+                Live Link
+                </button>
                 </Link>    
                 </section>     
             </div>
