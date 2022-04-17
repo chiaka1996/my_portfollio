@@ -1,87 +1,156 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../Css/Contact.css'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {Link} from "react-router-dom";
+import Profile from './Profile';
+import '../Css/Projects.css';
+import emailjs from '@emailjs/browser';
 
 const Contact = (props) => {
+    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/i
+    const [error, setError] = useState('');
+    const [message, setMessage] = useState('')
+    const [loading, setLoading] = useState(false)
+    const [template, setTemplate] = useState({
+        name: '',
+        email: '',
+        message: 'Message'
+    })
+    
+    const onChangeInput = (e) => {
+        const value = e.target.value;
+        const name = e.target.name
+        setTemplate({
+            ...template,
+            [name]: value
+        })
+    }
+
+    const sendMail = async (e) => {
+        try{
+            e.preventDefault();
+            setError('')
+            setMessage('')
+            setLoading(true)
+            const {name, email, message} = template;
+            
+            if(!name || !email || !message) {
+                setLoading(false)
+                return setError('please fill all fields')   
+            }
+            
+            if(!emailRegex.test(email)){
+                setLoading(false)
+                return setError('please input a valid email')
+            }
+
+            const response =  await  emailjs.send(
+                'service_fqvax5j',
+                'template_p0bjsgy', 
+                template,
+                'ytycbS_OkHSWIR9Gz'
+                );
+            if(response){
+                setTemplate({
+                    name: '',
+                    email: '',
+                    message: ''
+                })
+                setMessage('message sent successfully')
+                setLoading(false)
+            }
+        }
+        catch(err){
+        alert(err)
+        setLoading(false)
+        }
+    }
  
     return (
-        <div>
-        <div ref={props.refProp} className="certification-body">
-                <div className="cert_header"><span>Contact Me!</span></div>
+        <div className='resumeBody'>
+        <div className='resumeProfile'>
+        <Profile name='contact'/>
+        </div>
+        <div className="contactContainer">
+        <div className='contactHeader'>
+        Contact Me
+        </div>
+        <div className="contactIntroduction">
+        Interested in working together? Wherever you are with your
+        idea or your project, I'll be happy to help. I am available
+        for fullstack positions, either Full-time, Part-time or 
+        Contract. <strong>Kindly drop a message.!! </strong>
+        </div>
 
-                <div className="contactGridContainer">
+        <form>
+        {
+        message ? <div 
+        className='sucessMsg'
+        onMouseEnter={() => setMessage('')}
+        onClick={() => setMessage('')} 
+        >
+        {message}
+        </div> : ''
+        }
 
-                    <div className="contactGrid">
+        {
+        error ? <div 
+        className='errorMsg'
+        onMouseEnter = {() => setError('')}
+        onClick={() => setError('')}
+        >
+        {error}
+        </div>
+        : ''
+        }
 
-                        <img src="https://res.cloudinary.com/chiaka1996/image/upload/v1609861169/logos/portfollio_call_center_unymao.jpg" alt="customer_care" />
-                    </div>
+        <div className='inputContainer'>
+        <input      
+        type='text' 
+        name="name"
+        value={template.name}
+        onChange={onChangeInput}
+        required
+        />
+        <label>Name</label>
+        </div>
 
-                    <div className="contactGrid">
-                    <div className="contact-intro">
-                Interested in working together? Wherever you are with your idea or your project, 
-                I'll be happy to help. I am available for full stack positions, either full-time or remote.
-                </div>
+        <div className='inputContainer'>
+        <input      
+        type='text' 
+        name="email"
+        value={template.email}
+        onChange={onChangeInput}
+        required
+        />
+        <label>Email</label>
+        </div>
 
-                <div className="mail">
-                    <div>
-                <p><FontAwesomeIcon icon="envelope" size="sm" color="#20AAF3" className="contactLogo" />chiakajunior@yahoo.com</p>
-                <p><FontAwesomeIcon icon="envelope" size="sm" color="#20AAF3" className="contactLogo" />chikajunior19@gmail.com</p>
-                <p><FontAwesomeIcon icon="phone" size="sm" color="#20AAF3" className="contactLogo" />+2348084052359</p>
-                <p><FontAwesomeIcon icon="map-marker-alt" size="sm" color="#20AAF3" className="contactLogo" />Oshodi, Lagos, Nigeria</p>
-                <p>Thanks</p>
-                </div>
+        <div className="textAreaContainer">
+        <textarea 
+        className="contactInputTextArea" 
+        rows="5" 
+        cols="60"
+        value={template.message}
+        name='message'
+        onChange={onChangeInput}
+        >
+        Message
+        </textarea>
+        </div>
 
-                <div>
-
-                <Link to={{pathname:"https://twitter.com/NewtonChiaka"}}  target='_blank' > 
-            <FontAwesomeIcon icon={['fab', 'twitter']} size="lg" color="black" className="awesomeLogos"/>
-            </Link>
-
-            <Link to={{pathname:"https://github.com/chiaka1996"}}  target='_blank' > 
-        <FontAwesomeIcon icon={['fab', 'github']} size="lg" color="black" className="awesomeLogos" />
-        </Link>
-
-        <Link to={{pathname:"https://www.linkedin.com/in/osuji-chiaka-10b31a196/"}}  target='_blank' > 
-        <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="lg" color="black" className="awesomeLogos" />
-        </Link>
-
-        <Link to={{pathname:"https://www.facebook.com/profile.php?id=100009145788898"}}  target='_blank' > 
-        <FontAwesomeIcon icon={['fab', 'facebook']} size="lg" color="black" className="awesomeLogos" />  
-        </Link>
-                
-                </div>
-                </div>
-                    </div>
-
-                    {/* <div className="contactGrid"> */}
-                        {/* <form>
-                            <div className="contactInput" >
-                            <div> Name</div>
-                            <input type="text" className="contact_input" />
-                            </div>
-
-                            <div className="contactInput">
-                            <div> Email</div>
-                            <input type="text" className="contact_input" />
-                            </div>
-
-                            <div className="contactInput">
-                            <div>Message</div>
-                            <textarea className="contactInputTextArea" rows="4" cols="56"></textarea>
-                            </div>
-
-                            <div className="contactButton">
-                                <button>Message Me!</button>
-                            </div> */}
-                        {/* </form>
-                        
-                    </div> */} 
-
-                </div>  
-            </div>
-            <footer> copyright &#169; 2021, chiaka daniel</footer> 
-            </div>
+        <button 
+        className="contactButton"
+        onClick={sendMail}
+        >
+        {!loading ? 'Message Me!' : <div className="loading">
+        <span className="loadingSpan"></span>
+        <span className="loadingSpan"></span>
+        <span className="loadingSpan"></span>
+        </div> 
+        }
+        </button>
+        </form>
+        </div>         
+        </div> 
     )
 }
 

@@ -3,14 +3,13 @@ import Profile from './Profile';
 import FeaturedProjects from './FeaturedProjects';
 import '../Css/Projects.css';
  
-const Projects = (props) => {
-
+const Home = (props) => {
     return (
         <div className='projectBody'>
-            <div className="Profile">
-            <Profile name='projects' />
+            <div className='homeProfile'>
+            <Profile name='projects'/>
             </div>
-            <div className="projectContainer">
+            <div className="homeContainer">
             <div className='featuredHeader'>
             FEATURED
             </div>
@@ -54,7 +53,7 @@ const Projects = (props) => {
             </div>
             <div className='gridItem1'>
             <FeaturedProjects
-            header="Dashboard design"
+            header="Dashboar design"
             stacks="HTML,CSS"
             description= "A simple dashboard with dragable elements."
             type = 'others'
@@ -135,4 +134,4 @@ const Projects = (props) => {
     )
 }
 
-export default Projects;
+export default Home;

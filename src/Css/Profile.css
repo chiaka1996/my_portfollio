@@ -1,289 +1,202 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
-/* mobile Design */
-.profile {
-    margin-top: 17%;
-    padding-top: 1px;
-    padding-left: 1px;
-    padding-right: 1px;
+.profile{
+    font-family: sans-serif;
+    padding: 0 0 0 0;
+    color:  rgb(173, 173, 173);
+    display: inline-block;
 }
 
-.profile_grid {
+.TopImgContainer{
+    display: none;
+}
+
+.header{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(103, 202, 11);
+    display: block;
+}
+
+.mobileHeader{
+    display: none;
+}
+
+.header div{
+    line-height: 45px;
+}
+
+.introduction{
+    padding: 4% 0 0 0;
+    color: rgb(173, 173, 173);
+    font-size: 13px;
+    text-align: left;
+}
+
+.introduction strong{
+    color: rgb(171, 236, 171);
+}
+
+.mobileExplore{
+    display: none;
+}
+
+.linkContainer{
+    margin-top: 5%;
+    display: block;
+}
+
+.links{
+    padding: 5% 0 0 0;
+    color:  rgb(173, 173, 173);
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+.projects{
+    display: flex;
+    flex-direction: row;
+}
+
+.line{
+    width: 60px;
+    background-color:  rgb(173, 173, 173);
+    height: 1px;
+    margin: 2% 3% 0 3%;
+    transition: width 1s;
+}
+
+.extendLine{
+    transition: width 1s;
+    width: 100px;
+    background-color:  rgb(173, 173, 173);
+    height: 1px;
+    margin: 2% 3% 0 3%;
+}
+
+.socialMediaLink{
+    /* display: grid;
+    grid-template-columns: 25% 25% 25% 25%; */
+    display: flex;
+    flex-direction: row;
+    padding-top: 15%;
     width: 100%;
-    display: grid;
-    grid-template-rows: 50% 50%;
-    
 }
 
-.introduction_name {
-    font-family: 'Fredoka One';
-    padding-left: 0;
+.imgContainer{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
 }
 
-.greeting {
-    font-size: 19px;
+.socialMediaLink img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    /* border-radius: 50%; */
+}
+
+.github_twitter_linkedin{
+    padding: 3% 0 0 5%;
+    width: 100%;
+}
+
+.github_twitter_linkedin span{
+    margin-left: 1%;
+    font-size: 13px;
+}
+
+.inspiredBy{
+    padding: 4% 0 0 0; 
+    font-size: 12px;
+    text-align: left;
+}
+
+.inspiredBy strong{
+    color: rgb(103, 202, 11);
+    margin-left: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+    .Profile{
+       padding: 30% 0 0 0;
+       display: none;
+    }
+    .mobileHeader{
+        display: block;
+        font-size: 8.4vw;
+        font-weight: bold;
+        color: rgb(103, 202, 11);
+        text-align: center;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .TopImgContainer{
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: 2% auto 5% auto;
+    }
+
+    .TopImgContainer img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+    }
+
+    .introduction{
+        padding: 2% 0 0 0;
+        font-size: 4.3vw;
+        text-align: center;
+    }
+
+.linkContainer{
+    display: none;
+}
+
+.mobileExplore{
+    width: 40%;
+    margin: 8% auto;
+    border-radius: 3px;
+    display: block;
+}
+
+.mobileExplore section{
+    width: 100%;
+    height: inherit;
+    font-size: 4vw;
+    font-weight: bold;
+    background-color: rgb(24, 24, 24);
+    color: lightgrey;
+    border: 1px solid rgb(24, 24, 24);
+    outline: none;
+    border-radius: 3px;
+    padding: 2% 20%;
+    /* text-align: center; */
+    display: flex;
+}
+
+.btnFlex{
+    flex: 1;
+}
+
+.imgContainer{
+    display: none;
+}
+
+.socialMediaLink{
+    display: block;
     text-align: center;
-    }
-
-.profile_grid_item img {
-    width: 100%;
-    height: 300px;
-}
- .typing_effect {
-     /* margin-left: 10%; */
-     margin-left: 0;
-     font-family: 'Fredoka one';
-     text-align: center;
-}
-.grid_about {
-    padding-left: 1px;
-    padding-right: 1px;
-    margin-top: 1.5%;
 }
 
-.name {
-    border-bottom: 5px solid #64B409;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+.github_twitter_linkedin span{
+    margin-left: 1%;
+    font-size: 4.5vw;
 }
 
-.grid_about p {
-    margin-top: 2%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.inspiredBy{
+    text-align: center;
+    font-size: 4vw;
 }
-
-.resumeButton button {
-    width: 25%;
-    height: 30px;
-    background-color: #64B409;
-    color: black;
-    border-radius: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 13px;
-    margin-left: 35%;
-    border: 1px solid #64B409;
 }
-
-.resumeButton button:hover {
-color: white;
-}
-
-.ArrowDown {
-    color:  #64B409;
-    margin-left : 46%;
-    position : relative;
-    animation-name : example;
-    animation-duration : 1s;
-    animation-iteration-count: infinite;
-    margin-top: 8%;
-} 
-
-@keyframes example {
-    from {transform:translateY(0);}
-    to {transform:translateY(20%);}
-  }
-
-  /* ipad design */
-  @media only screen and (min-width: 710px) and (max-width: 800px)  { 
-    .profile {
-        margin-top: 1%;
-        padding-top: 1px;
-        padding-left: 1px;
-        padding-right: 1px;
-    }
-    
-    .introduction_name {
-        font-family: 'Fredoka One';
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .profile_grid_item img {
-        width: 100%;
-        height: 510px;
-    }
-    
-    .greeting {
-        font-size: 40px;
-        }
-
-        .typing_effect {
-            margin-left: 0;
-            font-family: 'Fredoka one';
-            font-size: 22px;
-            text-align: center;
-       }
-
-       .grid_about {
-        padding-left: 1px;
-        padding-right: 1px;
-        margin-top: 10.5%;
-    }
-
-       .grid_about p {
-        margin-top: 0.5%;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 22px;
-        padding: 0 2px 0 2px;
-    }
-
-    .resumeButton button {
-        width: 25%;
-        height: 50px;
-        background-color: #64B409;
-        color: black;
-        border-radius: 5px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 19px;
-        margin-left: 35%;
-        border: 1px solid #64B409;
-    }
-
-    .ArrowDown {
-        margin-top: 0;
-    }
-
-}
-
-/* ipad pro */
-@media only screen and (min-width: 800px) and (max-width: 1070px)  { 
-    .profile {
-        margin-top: 1%;
-        padding-top: 1px;
-        padding-left: 1px;
-        padding-right: 1px;
-    }
-    .profile_grid_item img {
-        width: 100%;
-        height: 655px;
-    }
-    
-    .introduction_name {
-        font-family: 'Fredoka One';
-        padding-left: 0;
-        text-align: center;
-    }
-    
-    .greeting {
-        font-size: 45px;
-        }
-
-        .typing_effect {
-            margin-left: 0;
-            font-family: 'Fredoka one';
-            font-size: 24px;
-            text-align: center;
-       }
-
-       .grid_about {
-        padding-left: 1px;
-        padding-right: 1px;
-        margin-top: 13.5%;
-    }
-
-       .grid_about p {
-        margin-top: 0.5%;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 29px;
-        padding: 0 2px 0 2px;
-    }
-
-    .resumeButton button {
-        width: 25%;
-        height: 60px;
-        background-color: #64B409;
-        color: black;
-        border-radius: 5px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 21px;
-        margin-left: 35%;
-        border: 1px solid #64B409;
-    }
-
-    .ArrowDown { 
-        margin-top: 0;
-    }
-}
-
-/* desktop design */
-@media only screen and (min-width: 1071px)  { 
-.profile {
-    margin-top: 3.3%;
-    padding-top: 2%;
-    padding-left: 5%;
-    padding-right: 2%;
-    
-}
-
-.profile_grid {
-    width: 95%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    
-}
-.introduction_name {
-    font-family: 'Fredoka One';
-    padding-left: 5%;
-}
-.profile_grid_item img {
-    width: 70%;
-    height: 525px;
-}
- .typing_effect {
-     /* margin-left: 18%; */
-     margin-left: 0;
-     text-align: center;
-     font-family: 'Fredoka one';
-}
-.grid_about {
-    padding-left: 2%;
-    padding-right: 13%;
-    margin-top: 23.5%;
-}
-
-.greeting {
-    font-size: 27px;
-    }
-
-.name {
-    border-bottom: 5px solid #64B409;
-}
-
-.grid_about p {
-    margin-top: 2%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.resumeButton button {
-    width: 25%;
-    height: 30px;
-    background-color: #64B409;
-    color: black;
-    border-radius: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 13px;
-    margin-left: 35%;
-    border: 1px solid #64B409;
-}
-
-.resumeButton button:hover {
-color: white;
-}
-
-
-.ArrowDown {
-    color:  #64B409;
-    margin-left : 46%;
-    position : relative;
-    animation-name : example;
-    animation-duration : 1s;
-    animation-iteration-count: infinite;
-    margin-top: 0;
-} 
-
-@keyframes example {
-    from {transform:translateY(0);}
-    to {transform:translateY(20%);}
-  }
-}
-
-

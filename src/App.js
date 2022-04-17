@@ -1,49 +1,32 @@
-import React, { useRef} from 'react';
+import React from 'react';
 import Nav from './Components/Nav';
-import Profile from './Components/Profile';
-import About from './Components/About';
+// import Profile from './Components/Profile';
 import Project from './Components/Projects';
+import Resume from './Components/Resume';
 import Contact from './Components/Contact';
-import Testimonial from './Components/Testimonial';
-import {BrowserRouter as Router} from 'react-router-dom';
+import Home from './Components/Home';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'; 
+import 'animate.css';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTwitter, faGithub, faLinkedinIn, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import {faBars, faSmileBeam, faAngleDown, faEnvelope, faPhone, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
+import { faLink, faPlay, faBars, faSmileBeam, faAngleDown, faEnvelope, faPhone, faMapMarkerAlt, faEye} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faBars, faSmileBeam, faTwitter, faGithub, faLinkedinIn, faFacebook, faAngleDown, faEnvelope, faPhone, faMapMarkerAlt );
-
+library.add(faLink, faPlay, faEye, faBars, faSmileBeam, faTwitter, faGithub, faLinkedinIn, faFacebook, faAngleDown, faEnvelope, faPhone, faMapMarkerAlt );
 
 function App() {
-
-     const myRef = useRef(null);
-
-     const myContact = useRef(null);
-
-     const myProject = useRef(null);
-
-     const myTestimonial = useRef(null);
-
-     const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
-
-  return (
-    
+  return ( 
     <div className="App">
-
-    <Router>
-      
-    <Nav scrollToRef = {scrollToRef} 
-    myRef ={myRef}
-    myContact = {myContact}
-    myProject = {myProject} 
-    myTestimonial = {myTestimonial}
-    /> 
-    <Profile />
-
-    <About refProp={myRef}/>
-     <Project  refProp = {myProject} />
-    <Testimonial refProp={myTestimonial} /> 
-    <Contact refProp = {myContact} /> 
+  <Router>
+    <div className='Appnavigation'>
+    <Nav />
+    </div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/project' element={<Project/>} />
+      <Route path="/resume" element={<Resume />} />
+      <Route path='/contact' element={<Contact />} />
+    </Routes> 
   </Router>
     </div>
   );

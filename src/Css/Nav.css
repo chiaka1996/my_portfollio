@@ -1,0 +1,84 @@
+.navigation{
+    color: white;;
+    display : flex;
+    width : 100%;
+    position: fixed;
+    background-color: black; 
+    top: 0;
+    z-index: 200;
+    /* height: 70px; */
+    padding: 3% 4% 1% 4%;
+  }
+  
+  .brandName{
+    color : rgb(103, 202, 11);;
+    display : flex;
+    font-family: 'Fredoka One';
+    /* font-style: italic; */
+    font-size : 23px;
+  }
+
+  .navFlex{
+    flex: 1;
+  }
+  
+  .span1 {  
+    letter-spacing: 3vw;
+  }
+  
+  .navBar {
+    cursor: pointer;
+   padding: 2.5% 4% 0 0;
+  }
+
+  .navBar2{
+    cursor : pointer;
+   padding: 4.5% 4% 0 0;
+  }
+
+  .navIcon {
+    width: 40px;
+    position: relative;
+    cursor: pointer;
+    height: 2px;
+    background-color: white;
+  }
+
+ .navIcon::after{
+    content: "";
+    position: absolute; 
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    top: 10px;
+    transition: transform 1s;
+  }
+
+  /* .iconCancel::after {
+    transform: rotate(135deg);
+}
+
+.navIcon{
+  transform: rotate(75deg)
+} */
+
+.iconCancel{
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+    height: 2px;
+    background-color: white;
+    transform: rotate(-135deg);
+    transition: transform 1s;
+}
+
+.iconCancel::after{
+  content: "";
+  position: absolute; 
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  top: 0.2px;
+  transform: rotate(90deg);
+  transition: transform 1s;
+}

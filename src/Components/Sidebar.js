@@ -1,42 +1,73 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import {Link} from 'react-router-dom';
 import '../Css/SideBar.css';
 
 const SideBar = (props) => {
     return(
-        <div className={props.showNav ? "sideBarContainer" : "sideBarContainerShow"}>
+        <div 
+        className={props.showNav ? "sideBarContainer" : "sideBarContainerShow"}
+        >
             <ul>
-
-            <li><span
-             onClick={()=>{
-                 props.scrollToRef(props.myRef)
-                 props.changeNav()
-                 }}>About</span></li>
-            <li><span onClick={()=> {
-                props.scrollToRef(props.myProject)
-                props.changeNav()
-                }}>Projects</span></li>
+            <li>
+            <Link 
+            to='/'
+            style={{
+                color: 'white'
+            }}
+            >
+            <span onClick={()=>props.changeNav()}>
+            Home
+            </span>
+            </Link>
+            </li>
+            <li>
+            <Link 
+            to='/project'
+            style={{
+                color: 'white'
+            }}
+            >
+            <span onClick={()=>props.changeNav()}>
+            Projects
+            </span>
+            </Link>
+            </li>
+            <li>
+            <Link 
+            to='/resume'
+            style={{
+                color: 'white'
+            }}
+            >
+            <span  onClick={()=>props.changeNav()}>
+             Resume
+             </span>
+             </Link>
+             </li>
+            <li>
+            <Link 
+            to='/contact'
+            style={{
+                color: 'white'
+            }}
+            >
+            < span onClick={() => props.changeNav()}>
+            Contact
+            </span>
+            </Link>
+            </li>
+            <a
+            className="certificates"
+            href="https://docs.google.com/presentation/d/17o7maq-rVbTai2CDVOBdctvz7znn3qxEdzoWk8jEmRc/edit?usp=sharing"
+            target='_blank'
+            >
             <li> 
-                <Link 
-                className="certificates"
-                to={{pathname:"https://docs.google.com/presentation/d/17o7maq-rVbTai2CDVOBdctvz7znn3qxEdzoWk8jEmRc/edit?usp=sharing"}}  
-                target='_blank'><span onClick={()=> props.changeNav()} >Certifications</span>
-                </Link>
-                </li>
-            <li>
-            <span onClick={()=>{
-                props.scrollToRef(props.myContact)
-                props.changeNav()
-                }}>Contact</span><br/>
+            <span onClick={() => props.changeNav()}>
+            Certifications
+            </span>
             </li>
-
-            <li>
-            <span onClick={()=>{
-                props.scrollToRef(props.myTestimonial)
-                props.changeNav()
-                }} >Testimonials</span><br/>
-            </li>
-
+            </a>
              </ul>
         </div>
     )

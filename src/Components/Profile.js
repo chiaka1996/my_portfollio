@@ -1,62 +1,195 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-restricted-globals */
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ReactTypingEffect from 'react-typing-effect';
-import  '../Css/Profile.css';
 import {Link} from 'react-router-dom';
+import '../Css/Profile.css';
 
-const Profile = (props) => {
-
-    const [greetings, setGreetings] = useState('');
-
-    useEffect (()=> {
-        const date = new Date();
-        const hour = date.getHours();
-
-        if(hour < 12) {
-            return setGreetings( <div className="greeting"> Good Morning! <FontAwesomeIcon icon="smile-beam" size="sm" color="#64B409" />, I'm <span className="name"> Osuji Chiaka</span> </div>);
-        }
-        if(hour >= 12 && hour < 17) {
-            return setGreetings( <div className="greeting"> Good Afternoon!<FontAwesomeIcon icon="smile-beam" size="sm"  color="#64B409" />, I'm <span className="name"> Osujii Chiaka</span></div>);
-        }
-         else{
-        return  setGreetings( <div className="greeting"> Good Evening! <FontAwesomeIcon icon="smile-beam" size="sm" color="#64B409" />, I'm <span className="name"> Osuji Chiaka</span></div>);
-         }
-         
-    }, [ ]);
+const Profile = ({name}) => {
+    const [projectWidth, setProjectWidth] = useState(false);
+    const [resumeWidth, setResumeWidth] = useState(false);
+    const [contactWidth, setContactWidth] = useState(false);
 
  
     return (
-        <div className="profile">
-        <div className="profile_grid">
-            <div className="profile_grid_item">
-                <img src="https://res.cloudinary.com/chiaka1996/image/upload/v1609618610/logos/svgProfile_fl17yi.jpg" alt="profile_image" />
+        <div className='profile'>
+            <div className="TopImgContainer">
+            <img 
+            src='https://res.cloudinary.com/chiaka1996/image/upload/v1649257451/profilepics_edited_2_rquik6.jpg'
+            alt="profile img"
+            />
             </div>
-            <div className="profile_grid_item grid_about">
-            <div className="introduction_name">{greetings}</div>
-            <div className="typing_effect">
-              <ReactTypingEffect
-                  text = {["I'm a FullStack Software Developer.", "Motivated. Talented. Disciplined"]} 
-                 />
-             </div>
-
-             <p>I'm a motivated full stack Developer with great passion for building 
-            excellent softwares, with an experience in converting Figma and Adobe XD design mockups to HTML and CSS.
-            I build fun projects using mostly PHP, JAVASCRIPT, REACT and VUE. I offer 2 years of development experience,
-            a strong aptitude for learning new technologies,
-            and a proven track record of meeting aggressive goals.
-          </p>
-
-          <div className="resumeButton">
-          <Link to={{pathname:"https://docs.google.com/document/d/1eG1NzBiaJNYSRhHbnkMPjCBRvuZn2Jezj_KRP-WPyjg/edit?usp=sharing"}} className='resume' target='_blank' >
-          <button>My Resume</button>
-          </Link>
-           </div>
-
-            </div>
+            <div className="header">
+            <div>Hello, I'm</div>
+            <div className='animate_animated animate__flipInX'>
+            Osuji Chiaka
+            </div> 
+        </div>
+        <div className='mobileHeader'>
+        Hello, I'm Osuji Chiaka
         </div>
 
-        <FontAwesomeIcon icon="angle-down" size="4x" color="yellowgreen" className="ArrowDown" />
+        <div className="introduction"> 
+        I'm a motivated <strong>Fullstack Developer</strong> with great passion for building 
+        excellent <strong>softwares</strong>, I create interactive experiences for amazing people 
+        using modern <strong>web technologies</strong>. I offer over <strong>2 years</strong> of development experience,
+        a strong aptitude for learning new technologies,
+        and a proven track record of meeting aggressive goals.
+        </div>
+
+        <div className="linkContainer">
+        <Link 
+        to='/project'
+        >
+        <div 
+        className="links"
+        onMouseEnter={()=>setProjectWidth(true)}
+        onMouseLeave={() => setProjectWidth(false)}
+        >
+        <div className="projects">
+        <span>00</span>
+        {
+        name==='projects'? <div className='extendLine'></div> : 
+        <div className={projectWidth ? 'extendLine' : 'line'}></div>
+        }
+        <span>PROJECTS</span>
+        </div>
+        </div>
+        </Link>
+
+        <Link 
+        to='/resume'
+        >
+        <div 
+        className="links"
+        onMouseEnter={()=>setResumeWidth(true)}
+        onMouseLeave={() => setResumeWidth(false)}
+        >
+        <div className="projects">
+        <span>01</span>
+        {
+        name === 'resume'? <div className='extendLine'></div> : 
+        <div className={resumeWidth ? 'extendLine' : 'line'}></div>
+        }
+        <span> RESUME</span>
+        </div>
+        </div>
+        </Link>
+
+        <Link 
+        to='/Contact'
+        >
+        <div 
+        className="links"
+        onMouseEnter={()=>setContactWidth(true)}
+        onMouseLeave={() => setContactWidth(false)}
+        >
+        <div className="projects">
+        <span>02</span>
+        {
+        name === 'contact'? <div className='extendLine'></div> : 
+        <div className={contactWidth ? 'extendLine' : 'line'}></div>
+        }
+        <span>CONTACT</span>
+        </div>
+        </div>
+        </Link>
+        </div>
+
+       
+       {/*mobileExplorer is mobile view only */}
+        <div className='mobileExplore'>
+        <Link
+        to='/project'
+        style={{color: 'white'}}
+        >
+        <section>
+        <span>Explore</span>
+        <div className="btnFlex"></div>
+        <div>
+        <FontAwesomeIcon 
+        icon={['fa', 'play']} 
+        size="sm" 
+        color="lightgrey" 
+        // className="awesomeLogos" 
+        />
+        </div>
+        </section>
+        </Link>
+        </div>
+        
+
+        <div className='socialMediaLink'> 
+        <div className="imgContainer">
+        <img 
+        src='https://res.cloudinary.com/chiaka1996/image/upload/v1649257451/profilepics_edited_2_rquik6.jpg'
+        alt="profile img"
+        />
+        </div>
+        <div className="github_twitter_linkedin">
+        <a
+        href="https://github.com/chiaka1996"
+        target='_blank' 
+        rel='noreferrer'
+        style={{
+            color: 'rgb(103, 202, 11)',
+            marginRight: '5%'
+        }}
+        > 
+        <FontAwesomeIcon 
+        icon={['fab', 'github']} 
+        size="sm" 
+        color="rgb(103, 202, 11)" 
+        className="awesomeLogos" 
+        />
+        <span>
+        Github
+        </span>
+        </a>
+        <a
+        href="https://twitter.com/NewtonChiaka"  
+        target='_blank'
+        rel='noreferrer'
+        style={{
+            color: 'rgb(103, 202, 11)',
+            marginRight: '5%'
+        }}
+        > 
+        <FontAwesomeIcon 
+        icon={['fab', 'twitter']} 
+        size="sm" 
+        color="rgb(103, 202, 11)" 
+        className="awesomeLogos"
+        />
+        <span>
+        Twitter
+        </span>
+        </a>
+        <a 
+        href="https://www.linkedin.com/in/osuji-chiaka-10b31a196/"
+        target='_blank' 
+        rel='noreferrer'
+        style={{
+            color: 'rgb(103, 202, 11)',
+            marginRight: '5%'
+        }}
+        > 
+        <FontAwesomeIcon 
+        icon={['fab', 'linkedin-in']} 
+        size="sm" 
+        color="rgb(103, 202, 11)" 
+        className="awesomeLogos" 
+        />
+        <span>
+        Linkedin
+        </span>
+        </a>
+        </div>
+        </div>
+        <div className='inspiredBy'> 
+        Inspired by 
+        <strong>Collins Enebelli</strong>
+        </div>
         </div>
     )
 }

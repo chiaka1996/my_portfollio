@@ -1,0 +1,74 @@
+.featuredContainer{
+    width: 100%;
+    height: 100px;
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+.featureContainer{
+    padding: 8% 0 2% 8%;
+}
+
+.heading{
+    color: rgb(103, 202, 11);
+    font-weight: 800;
+    font-size: 17px;
+
+}
+
+.stacks{
+    font-size: 11px;
+    font-weight: bold;
+    padding-top: 1%;
+}
+
+.featureDescription{
+    font-size: 13px;
+    padding-top: 5%;
+    font-family: 'Fredoka One', cursive;
+}
+
+.liveLink, .codeLink{
+    padding-top: 0;
+    font-size: 13px;
+    width: 15%;
+}
+
+.liveLink span, .codeLink span{
+    margin-left: 5%;
+}
+
+.othersCodeLink, .othersLiveLink{
+    padding-top: 7%;
+    font-size: 13px;
+    width: 30%;
+}
+
+.othersCodeLink span, .othersLiveLink span{
+    margin-left: 5%;
+}
+
+.flexLink{
+    display: flex;
+    flex-direction: row;
+    padding: 7% 0 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .othersCodeLink, .othersLiveLink{
+        padding-top: 7%;
+        font-size: 13px;
+        width: 15%;
+    }
+
+    .liveLink, .codeLink{
+        padding-top: 5%;
+        font-size: 13px;
+        width: 15%;
+    }
+    
+    .othersCodeLink span, .othersLiveLink span{
+        margin-left: 5%;
+    }
+}
+

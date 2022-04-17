@@ -1,244 +1,184 @@
-/* mobile design */
-.certification-body { 
-    margin: 10% 0% 1% 0%;
+/* desktop design */
+.contactHeader{
+    font-size: 22px;
+    color: rgb(103, 202, 11);
+    font-weight: bold;
+    padding: 0 0 1% 0;
 }
 
-footer {
-    margin-top: 2%;
-    text-align: center;
-    color: black;
-    background-color:  #20AAF3;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.contactContainer{
+    background-color: rgb(19, 18, 18);
+    padding: 1% 4% 1% 4%;
 }
 
-.cert_header {
-    margin-left: 0;
-    text-align: center; 
-    margin-bottom : 2%;
-    color : black;
-    font-family: 'Fredoka One';
-    font-size: 27px;
+.contactIntroduction{
+    font-size: 13px;
 }
 
-.cert_header span {
-    border-bottom : 7px solid #20AAF3;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px; 
+.contactIntroduction strong{
+    color: rgb(171, 236, 171);
 }
 
-.contactGridContainer {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-column-gap: 0;
+form{
+    padding: 8% 0 0 0;
+}
+
+.inputContainer{
+    position: relative;
     width: 100%;
+    margin-bottom: 10%;
 }
 
-.contactGrid {
-    padding: 2% 2% 2% 2%;
-    
+.contactInputTextArea{
+    background-color: rgb(202, 200, 200);
+    outline: none;
 }
 
-.contactInput {
+.textAreaContainer{
+    position: relative;
+    width: 100%;
     margin-bottom: 2%;
 }
 
-.contact-intro {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+textarea{
+    padding: 0.5% 0.5% 0 2%;
 }
 
-.mail {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 5%;
+textarea:focus{
+    border-bottom: 3px solid  rgb(103, 202, 11);
 }
 
-.contactLogo {
-    margin-right: 1%;
+.inputContainer label{
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 0 0 0 0;
+    color: black;
 }
 
-/* .contactGrid form {
-    margin-top: 5%;
-}
 
-.contactInput input {
+.inputContainer input{
     width: 100%;
-    border: 1px solid #20AAF3;
-    border-radius: 5px;
+    height: 40px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid grey;
+    margin: 0 0 0 0;
+    background-color: rgb(202, 200, 200); 
+    padding: 0 0 0 3%;
+    outline: none;
 }
 
-.contactInput div {
-    font-family: 'Fredoka One';
+.inputContainer input:focus{
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid rgb(103, 202, 11);
 }
 
-textarea {
-    width: 100%;
-    border: 1px solid #20AAF3;
-    border-radius: 5px;  
+.inputContainer input:valid ~ label
+{
+    transform: translateY(-160%);
+    font-size: 14px;
+    color:  rgb(103, 202, 11);
+    left: 0;
+    font-weight: bold;
 }
 
-.contactButton button {
-    width: 30%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #64B409;
-    border: 1px solid #64B409;
-    border-radius: 5px;
+.inputContainer input:focus ~ label
+{
+    transform: translateY(-160%);
+    font-size: 14px;
+    color: rgb(103, 202, 11);
+    left: 0;
+    font-weight: bold;
 }
 
-.contactButton button:hover {
+
+.error{
+    color: rgb(129, 0, 0);
+    position: absolute;
+    bottom: -48%;
+    font-size: 12px;
+    font-weight: bold;
+    left: 0;
+}
+
+.contactButton{
+    background-color: rgb(103, 202, 11);
     color: white;
-    width: 35%;
-} */
-
-.awesomeLogos {
-    margin-right: 6%;
+    font-weight: bold;
+    border: 1px solid rgb(103, 202, 11);
+    outline: none;
+    width: 50%;
+    padding: 1% 0 1% 0;
 }
 
-.awesomeLogos:hover {
-    color: #20AAF3;
+.sucessMsg{
+    color: white;
+    background-color: rgb(24, 43, 7);
+    width: 60%;
+    margin: 0 auto 2% auto;
+    padding: 1% 0;
+    text-align: center;
+    font-size: 12px;
 }
 
-/* ipad design */
-@media only screen and (min-width: 700px) and (max-width: 800px)  { 
-    .contactGridContainer {
-        display: grid;
-        grid-template-columns: 40% 58%;
-        grid-column-gap: 5%;
-        width: 100%;
-    }
-
-    .contactGrid {
-        padding: 0 4% 2% 2%;
-        font-size: 17.5px;
-        
-    }
-
-    .cert_header {
-        margin-left : 0; 
-        font-size: 35px;
-        text-align: center;
-    }
+.errorMsg{
+    color: white;
+    background-color: rgb(85, 7, 7);
+    width: 60%;
+    margin: 0 auto 2% auto;
+    padding: 1% 0;
+    text-align: center;
+    font-size: 12px;
 
 }
 
-/* ipad pro design */
-@media only screen and (min-width: 801px) and (max-width: 1069px)  { 
-    .contactGridContainer {
-        display: grid;
-        grid-template-columns: 40% 58%;
-        grid-column-gap: 5%;
-        width: 100%;
-    }
+.loadingSpan{
+    width: 10px;
+    height: 10px;
+    margin: 0.7%;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    animation-name: dots;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;;
+}
 
-    .contactGrid {
-        padding: 0 4% 2% 2%;
-        font-size: 17.5px;
-        
-    }
+.loadingSpan:nth-child(2){
+    animation-delay: 0.2s
+}
 
-    .cert_header {
-        /* margin-left : 33%;  */
-        margin-left: 0px;
-        font-size: 35px;
-        text-align: center;
+.loadingSpan:nth-child(3){
+    animation-delay: 0.3s
+}
+
+@keyframes dots{
+    50%{
+        opacity: 0;
+        transform: scale(0.7) translateY(10px);
     }
 }
 
-/* desktop view */
-@media only screen and (min-width: 1070px)  {
+@media only screen and (max-width: 600px) {
+    .contactHeader{
+        font-size: 8vw;
+        padding: 2% 0 1% 0;
+    }
 
-    .certification-body {
-        margin: 10% 4% 1% 4%;
+    .contactContainer{
+        background-color: rgb(19, 18, 18);
+        padding: 1% 4% 10% 4%;
     }
-    
-    footer {
-        margin-top: 2%;
-        text-align: center;
-        color: black;
-        background-color:  #20AAF3;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    .cert_header {
-        margin-left : 0; 
-        margin-bottom : 2%;
-        color : black;
-        font-family: 'Fredoka One';
-        font-size: 27px;
-        text-align: center;
-    }
-    
-    .cert_header span {
-        border-bottom : 7px solid #20AAF3;
-        border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px; 
-    }
-    
-    .contactGridContainer {
-        display: grid;
-        grid-template-columns: 40% 50%;
-        grid-column-gap: 10%;
+
+    textarea{
+        padding: 0.5% 0.5% 0 2%;
         width: 100%;
-    }
-    
-    .contactGrid {
-        padding: 2% 2% 2% 22%;
-        
-    }
-    
-    .contactInput {
-        margin-bottom: 2%;
-    }
-    
-    .contact-intro {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    .mail {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        margin-top: 5%;
-    }
-    
-    .contactLogo {
-        margin-right: 1%;
-    }
-    
-    .contactGrid form {
-        margin-top: 5%;
-    }
-    
-    .contactInput input {
-        width: 100%;
-        border: 1px solid #20AAF3;
-        border-radius: 5px;
-    }
-    
-    .contactInput div {
-        font-family: 'Fredoka One';
-    }
-    
-    textarea {
-        width: 100%;
-        border: 1px solid #20AAF3;
-        border-radius: 5px;  
-    }
-    
-    .contactButton button {
-        width: 30%;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        background-color: #64B409;
-        border: 1px solid #64B409;
-        border-radius: 5px;
-    }
-    
-    .contactButton button:hover {
-        color: white;
-        width: 35%;
-    }
-    
-    .awesomeLogos {
-        margin-right: 6%;
-    }
-    
-    .awesomeLogos:hover {
-        color: #20AAF3;
     }
 }
+
+

@@ -1,5 +1,5 @@
 .sideBarContainerShow{
-    transform: translateX(-100%);
+    transform: translateY(-100%);
     transition: transform 1s;
     background-color: black;
     color: white;
@@ -15,16 +15,16 @@
 }
 
 .sideBarContainer {
-    transform: translateX(0);
+    transform: translateY(0);
     transition: transform 1s;
     background-color: black;
     color: white;
     font-family: 'Fredoka One';
     height: 850px;
-    width: 90%;
+    width: 100%;
     position: fixed;
-    z-index: 600;
-    opacity: 0.8;
+    z-index: 100;
+    opacity: 1;
     text-align: center;
     padding-top: 35%;
     font-size: 28px;
