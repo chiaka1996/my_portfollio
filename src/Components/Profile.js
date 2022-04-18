@@ -40,6 +40,9 @@ const Profile = ({name}) => {
         <div className="linkContainer">
         <Link 
         to='/project'
+        style={{
+            textDecoration: 'none'
+        }}
         >
         <div 
         className="links"
@@ -59,6 +62,9 @@ const Profile = ({name}) => {
 
         <Link 
         to='/resume'
+        style={{
+            textDecoration: 'none'
+        }}
         >
         <div 
         className="links"
@@ -76,8 +82,12 @@ const Profile = ({name}) => {
         </div>
         </Link>
 
-        <Link 
-        to='/Contact'
+        <a
+        href="https://docs.google.com/presentation/d/17o7maq-rVbTai2CDVOBdctvz7znn3qxEdzoWk8jEmRc/edit?usp=sharing"
+        target='_blank'
+        style={{
+            textDecoration: 'none'
+        }}
         >
         <div 
         className="links"
@@ -90,10 +100,10 @@ const Profile = ({name}) => {
         name === 'contact'? <div className='extendLine'></div> : 
         <div className={contactWidth ? 'extendLine' : 'line'}></div>
         }
-        <span>CONTACT</span>
+        <span>CERTIFICATIONS</span>
         </div>
         </div>
-        </Link>
+        </a>
         </div>
 
        

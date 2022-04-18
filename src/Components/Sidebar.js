@@ -46,7 +46,7 @@ const SideBar = (props) => {
              </Link>
              </li>
             <li>
-            <Link 
+            {/* <Link 
             to='/contact'
             style={{
                 color: 'white'
@@ -55,7 +55,7 @@ const SideBar = (props) => {
             < span onClick={() => props.changeNav()}>
             Contact
             </span>
-            </Link>
+            </Link> */}
             </li>
             <a
             className="certificates"
