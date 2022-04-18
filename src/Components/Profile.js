@@ -108,7 +108,7 @@ const Profile = ({name}) => {
 
        
        {/*mobileExplorer is mobile view only */}
-        <div className='mobileExplore'>
+        <div className='mobileExplore animate_animated animate__pulse animate__infinite'>
         <Link
         to='/project'
         style={{color: 'white'}}
