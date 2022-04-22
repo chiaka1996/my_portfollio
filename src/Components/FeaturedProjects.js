@@ -1,7 +1,7 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import '../Css/FeaturedProject.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {Link} from 'react-router-dom';
 
 const Features = ({header,stacks,description,liveLink,codeLink,type}) => {
     // const myStacks = stacks.split(',');
@@ -20,8 +20,8 @@ const Features = ({header,stacks,description,liveLink,codeLink,type}) => {
 
         <div className='flexLink'>
         <div className={type === 'featured'?'liveLink':'othersLiveLink'}>
-        <Link
-        to={{pathname:liveLink}}  
+        <a
+        href={liveLink} 
         target='_blank'
         style={{
             color: "rgb(103, 202, 11)",
@@ -34,13 +34,13 @@ const Features = ({header,stacks,description,liveLink,codeLink,type}) => {
          color="rgb(103, 202, 11)"
          />
          <span>Live</span>
-         </Link>
+         </a>
         </div>
 
         {codeLink.length > 1 ? 
         <div  className={type === 'featured'?'codeLink':'othersCodeLink'}>
-        <Link
-         to={{pathname:codeLink}}  
+        <a
+         href={codeLink}  
          target='_blank'
          style={{
              color: "rgb(103, 202, 11)",
@@ -53,7 +53,7 @@ const Features = ({header,stacks,description,liveLink,codeLink,type}) => {
          color="rgb(103, 202, 11)"
          />
          <span>code</span> 
-         </Link>
+         </a>
         </div> : ''
         }
         </div>
