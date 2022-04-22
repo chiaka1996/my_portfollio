@@ -11,6 +11,15 @@
   display: none;
 }
 
+.cursor{
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 600;
+}
+
 @media only screen and (max-width: 600px) {
 .Appnavigation{
 display: block;

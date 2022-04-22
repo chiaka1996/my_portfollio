@@ -25,6 +25,7 @@ const Features = ({header,stacks,description,liveLink,codeLink,type}) => {
         target='_blank'
         style={{
             color: "rgb(103, 202, 11)",
+            textDecoration: 'none'
         }}
         >
         <FontAwesomeIcon
@@ -43,6 +44,7 @@ const Features = ({header,stacks,description,liveLink,codeLink,type}) => {
          target='_blank'
          style={{
              color: "rgb(103, 202, 11)",
+             textDecoration: 'none'
          }}
          >
          <FontAwesomeIcon

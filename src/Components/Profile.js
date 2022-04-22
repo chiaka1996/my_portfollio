@@ -9,7 +9,6 @@ const Profile = ({name}) => {
     const [projectWidth, setProjectWidth] = useState(false);
     const [resumeWidth, setResumeWidth] = useState(false);
     const [contactWidth, setContactWidth] = useState(false);
-
  
     return (
         <div className='profile'>

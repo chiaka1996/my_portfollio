@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Nav from './Components/Nav';
 // import Profile from './Components/Profile';
 import Project from './Components/Projects';
@@ -15,12 +15,27 @@ import { faLink, faPlay, faBars, faSmileBeam, faAngleDown, faEnvelope, faPhone, 
 library.add(faLink, faPlay, faEye, faBars, faSmileBeam, faTwitter, faGithub, faLinkedinIn, faFacebook, faAngleDown, faEnvelope, faPhone, faMapMarkerAlt );
 
 function App() {
+  const [cursorX, setCursorX] = useState('');
+  const [cursorY, setCursorY] =  useState('');
   return ( 
-    <div className="App">
+    <div 
+    className="App"
+    onMouseMove={(e) =>{
+      setCursorX(e.pageX)
+      setCursorY(e.pageY)
+    }}
+    >
   <Router>
     <div className='Appnavigation'>
     <Nav />
     </div>
+    <div 
+    className='cursor'
+    style={{
+      top: cursorY + 'px',
+      left: cursorX + 'px'
+    }}
+    ></div>
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/project' element={<Project/>} />
