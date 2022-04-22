@@ -142,7 +142,8 @@ const Profile = ({name}) => {
         rel='noreferrer'
         style={{
             color: 'rgb(103, 202, 11)',
-            marginRight: '5%'
+            marginRight: '5%',
+            textDecoration: 'none'
         }}
         > 
         <FontAwesomeIcon 
@@ -161,7 +162,8 @@ const Profile = ({name}) => {
         rel='noreferrer'
         style={{
             color: 'rgb(103, 202, 11)',
-            marginRight: '5%'
+            marginRight: '5%',
+            textDecoration: 'none'
         }}
         > 
         <FontAwesomeIcon 
@@ -180,7 +182,8 @@ const Profile = ({name}) => {
         rel='noreferrer'
         style={{
             color: 'rgb(103, 202, 11)',
-            marginRight: '5%'
+            marginRight: '5%',
+            textDecoration: 'none'
         }}
         > 
         <FontAwesomeIcon 
