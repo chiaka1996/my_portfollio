@@ -27,6 +27,17 @@ const Projects = (props) => {
 
             <div className='featuredProjects'> 
             <FeaturedProjects 
+            header= "Student Year Book"
+            stacks="Next.js,MONGODB"
+            description = "A student web based year book for graduating students"
+            type = 'featured'
+            liveLink="https://chiaka-daniel-nextjs-test.vercel.app/"
+            codeLink=""
+            />
+            </div>
+
+            <div className='featuredProjects'> 
+            <FeaturedProjects 
             header= "Netflix Authentication Clone"
             stacks="HTML,CSS,NODEJS,EXPRESS,MONGODB"
             description = "A simple Clone of Netflix Authentication system"
