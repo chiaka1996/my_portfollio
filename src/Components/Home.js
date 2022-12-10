@@ -13,7 +13,7 @@ const Home = (props) => {
             <div className='featuredHeader'>
             FEATURED
             </div>
-            <div className='featuredProjects'> 
+            {/* <div className='featuredProjects'> 
             <FeaturedProjects 
             header= "E-commerce Website"
             stacks="REACT,NODEJS,EXPRESS,REDUX,MONGODB"
@@ -22,7 +22,7 @@ const Home = (props) => {
             liveLink="https://chiakastore.herokuapp.com/"
             codeLink=""
             />
-            </div>
+            </div> */}
 
             <div className='featuredProjects'> 
             <FeaturedProjects 
@@ -58,7 +58,7 @@ const Home = (props) => {
             stacks="VUE,NODEJS,EXPRESS,MONGODB"
             description= "A simple reminder application"
             type = 'others'
-            LiveLink = 'https://noforget.netlify.app'
+            liveLink = 'https://noforget.netlify.app/'
             codeLink='https://github.com/chiaka1996/noforgetApp'
             />
             </div>
@@ -68,7 +68,7 @@ const Home = (props) => {
             stacks="HTML,CSS"
             description= "A simple dashboard with dragable elements."
             type = 'others'
-            LiveLink = 'https://daniel-dashboard.netlify.app/'
+            liveLink = 'https://daniel-dashboard.netlify.app/'
             codeLink='https://github.com/chiaka1996/dashboard_interview'
             />
             </div>
@@ -88,7 +88,7 @@ const Home = (props) => {
             stacks="REACT,CSS"
             description= "A tracker Showing the number of Covid-19 cases in different cities."
             type = 'others'
-            LiveLink = 'https://knowthestat.netlify.app'
+            liveLink = 'https://knowthestat.netlify.app'
             codeLink='https://github.com/chiaka1996/covid19-app'
             />
             </div>
@@ -101,7 +101,7 @@ const Home = (props) => {
             stacks="HTML,CSS,NODEJS,EXPRESS,MONGODB"
             description= "An event planning website"
             type = 'others'
-            LiveLink = 'https://zzarpro.netlify.app/'
+            liveLink = 'https://zzarpro.netlify.app/'
             codeLink='https://github.com/chiaka1996/zzarclientside'
             />
             </div>
@@ -111,7 +111,7 @@ const Home = (props) => {
             stacks="HTML,CSS,BOOTSTRAP"
             description= "Frontend design of an hotel website"
             type = 'others'
-            LiveLink = 'https://chiaka1996.github.io/fluxhotel/'
+            liveLink = 'https://chiaka1996.github.io/fluxhotel/'
             codeLink='https://github.com/chiaka1996/fluxhotel'
             />
             </div>
@@ -121,7 +121,7 @@ const Home = (props) => {
             stacks="React,CSS"
             description= "A landing page for a tech startup"
             type = 'others'
-            LiveLink = 'https://github.com/chiaka1996/rain_website'
+            liveLink = 'https://github.com/chiaka1996/rain_website'
             codeLink='https://github.com/chiaka1996/rain_website'
             />
             </div>
@@ -131,7 +131,7 @@ const Home = (props) => {
             stacks="HTML,CSS,JAVASCRIPT"
             description= "A Simple quiz App"
             type = 'others'
-            LiveLink = 'https://chiaka1996.github.io/javascriptquiz/'
+            liveLink = 'https://chiaka1996.github.io/javascriptquiz/'
             codeLink='https://github.com/chiaka1996/javascriptquiz'
             />
             </div>
