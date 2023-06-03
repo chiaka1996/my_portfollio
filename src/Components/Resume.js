@@ -27,7 +27,7 @@ const Resume = () => {
         <div className='subHeaderLine'></div>
         </div>
         <div className='coreTechs'>
-        HTML, CSS, BOOTSTRAP, MATERIAL UI, REACT, NODEJS, EXPRESS, MONGODB, REDUX 
+        HTML, CSS, JAVASCRIPT, BOOTSTRAP, MATERIAL UI, REACT, NEXTJS, NODEJS, EXPRESS, MONGODB, REDUX 
         </div>
         </div>
 
@@ -51,13 +51,13 @@ const Resume = () => {
 
         <div className='workList'>
         <div className='workHeader'>
-        ZzarEvent - Web developer[Contract}
+        ZzarEvent - Web developer(Contract)
         </div>
         <div className='workDate'>
-        March 10, 2022 - Present
+        March 10, 2022 - April 22, 2022
         </div>
         <div className="briefDescription">
-        Currently working Part-time as a web developer with zzarEvent.
+        worked with zzarEvent Pro and helped them build their website
         </div>
 
         <ul>
@@ -66,13 +66,12 @@ const Resume = () => {
             <li>created an api for collecting customers feedbacks</li>
             <li>created an api to enable the admin view all customer request </li>
             <li>Creaed an api to enable the admin view all the feedbacks</li>
-            <li>Helped in buildib</li>
         </ul>
         </div> 
 
         <div className='workList'>
         <div className='workHeader'>
-        Rain Tech - <span>Frontend Developer</span> [Contract}
+        Rain Tech - <span>Frontend Developer</span> (Contract)
         </div>
         <div className='workDate'>
         June 17, 2021 - July 4, 2021

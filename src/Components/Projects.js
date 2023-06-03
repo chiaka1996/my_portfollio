@@ -14,7 +14,7 @@ const Projects = (props) => {
             <div className='featuredHeader'>
             FEATURED
             </div>
-            <div className='featuredProjects'> 
+            {/* <div className='featuredProjects'> 
             <FeaturedProjects 
             header= "E-commerce Website"
             stacks="REACT,NODEJS,EXPRESS,REDUX,MONGODB"
@@ -23,7 +23,7 @@ const Projects = (props) => {
             liveLink="https://chiakastore.herokuapp.com/"
             codeLink=""
             />
-            </div>
+            </div> */}
 
             <div className='featuredProjects'> 
             <FeaturedProjects 
@@ -38,6 +38,17 @@ const Projects = (props) => {
 
             <div className='featuredProjects'> 
             <FeaturedProjects 
+            header= "Tracquire"
+            stacks="Nextjs, Laravel"
+            description = "A social commerce application for the exchange of goods. (still building)"
+            type = 'featured'
+            liveLink="https://tracquire.vercel.app"
+            codeLink=""
+            />
+            </div>
+
+            {/* <div className='featuredProjects'> 
+            <FeaturedProjects 
             header= "Netflix Authentication Clone"
             stacks="HTML,CSS,NODEJS,EXPRESS,MONGODB"
             description = "A simple Clone of Netflix Authentication system"
@@ -45,7 +56,7 @@ const Projects = (props) => {
             liveLink="https://netflixauthenticationclone.netlify.app/"
             codeLink="https://github.com/chiaka1996/Zuri-Netflix-Clone"
             />
-            </div>
+            </div> */}
 
             <div className='othersHeader'>
             OTHERS
