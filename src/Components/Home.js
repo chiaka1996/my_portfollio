@@ -13,16 +13,28 @@ const Home = (props) => {
             <div className='featuredHeader'>
             FEATURED
             </div>
-            {/* <div className='featuredProjects'> 
+
+            <div className='featuredProjects'> 
             <FeaturedProjects 
-            header= "E-commerce Website"
-            stacks="REACT,NODEJS,EXPRESS,REDUX,MONGODB"
-            description = "An Ecommerce site, with an admin dashboard."
+            header= "Tracquire"
+            stacks="Nextjs, Laravel"
+            description = "A social commerce application for the exchange of goods. (still building)"
             type = 'featured'
-            liveLink="https://chiakastore.herokuapp.com/"
+            liveLink="https://tracquire.vercel.app"
             codeLink=""
             />
-            </div> */}
+            </div>
+
+            <div className='featuredProjects'> 
+            <FeaturedProjects 
+            header= "Artsy"
+            stacks="Nextjs"
+            description = "An e-commerce p[icture shop"
+            type = 'featured'
+            liveLink="https://artsy-khaki.vercel.app/"
+            codeLink="https://github.com/chiaka1996/Artsy"
+            />
+            </div>
 
             <div className='featuredProjects'> 
             <FeaturedProjects 
@@ -35,16 +47,7 @@ const Home = (props) => {
             />
             </div>
 
-            <div className='featuredProjects'> 
-            <FeaturedProjects 
-            header= "Netflix Authentication Clone"
-            stacks="HTML,CSS,NODEJS,EXPRESS,MONGODB"
-            description = "A simple Clone of Netflix Authentication system"
-            type = 'featured'
-            liveLink="https://netflixauthenticationclone.netlify.app/"
-            codeLink="https://github.com/chiaka1996/Zuri-Netflix-Clone"
-            />
-            </div>
+           
 
             <div className='othersHeader'>
             OTHERS

@@ -14,27 +14,6 @@ const Projects = (props) => {
             <div className='featuredHeader'>
             FEATURED
             </div>
-            {/* <div className='featuredProjects'> 
-            <FeaturedProjects 
-            header= "E-commerce Website"
-            stacks="REACT,NODEJS,EXPRESS,REDUX,MONGODB"
-            description = "An Ecommerce site, with an admin dashboard."
-            type = 'featured'
-            liveLink="https://chiakastore.herokuapp.com/"
-            codeLink=""
-            />
-            </div> */}
-
-            <div className='featuredProjects'> 
-            <FeaturedProjects 
-            header= "Student Year Book"
-            stacks="Next.js,MONGODB"
-            description = "A student web based year book for graduating students"
-            type = 'featured'
-            liveLink="https://chiaka-daniel-nextjs-test.vercel.app/"
-            codeLink=""
-            />
-            </div>
 
             <div className='featuredProjects'> 
             <FeaturedProjects 
@@ -46,17 +25,28 @@ const Projects = (props) => {
             codeLink=""
             />
             </div>
-
-            {/* <div className='featuredProjects'> 
+            
+            <div className='featuredProjects'> 
             <FeaturedProjects 
-            header= "Netflix Authentication Clone"
-            stacks="HTML,CSS,NODEJS,EXPRESS,MONGODB"
-            description = "A simple Clone of Netflix Authentication system"
+            header= "Artsy"
+            stacks="Nextjs"
+            description = "An e-commerce p[icture shop"
             type = 'featured'
-            liveLink="https://netflixauthenticationclone.netlify.app/"
-            codeLink="https://github.com/chiaka1996/Zuri-Netflix-Clone"
+            liveLink="https://artsy-khaki.vercel.app/"
+            codeLink="https://github.com/chiaka1996/Artsy"
             />
-            </div> */}
+            </div>
+
+            <div className='featuredProjects'> 
+            <FeaturedProjects 
+            header= "Student Year Book"
+            stacks="Next.js,MONGODB"
+            description = "A student web based year book for graduating students"
+            type = 'featured'
+            liveLink="https://chiaka-daniel-nextjs-test.vercel.app/"
+            codeLink=""
+            />
+            </div>
 
             <div className='othersHeader'>
             OTHERS
