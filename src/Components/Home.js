@@ -29,7 +29,7 @@ const Home = (props) => {
             <FeaturedProjects 
             header= "Artsy"
             stacks="Nextjs"
-            description = "An e-commerce p[icture shop"
+            description = "An e-commerce picture shop"
             type = 'featured'
             liveLink="https://artsy-khaki.vercel.app/"
             codeLink="https://github.com/chiaka1996/Artsy"
