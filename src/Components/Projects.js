@@ -17,11 +17,11 @@ const Projects = (props) => {
 
             <div className='featuredProjects'> 
             <FeaturedProjects 
-            header= "Tracquire"
-            stacks="Nextjs, Laravel"
-            description = "A social commerce application for the exchange of goods. (still building)"
+            header= "Student Year Book"
+            stacks="Next.js,MONGODB"
+            description = "A student web based year book for graduating students"
             type = 'featured'
-            liveLink="https://tracquire.vercel.app"
+            liveLink="https://chiaka-daniel-nextjs-test.vercel.app/"
             codeLink=""
             />
             </div>
@@ -39,11 +39,22 @@ const Projects = (props) => {
 
             <div className='featuredProjects'> 
             <FeaturedProjects 
-            header= "Student Year Book"
-            stacks="Next.js,MONGODB"
-            description = "A student web based year book for graduating students"
+            header= "Opspad"
+            stacks="React, Python"
+            description = "An Application that helps Devops engineers manage all their business servers"
             type = 'featured'
-            liveLink="https://chiaka-daniel-nextjs-test.vercel.app/"
+            liveLink="https://opspad-theta.vercel.app/"
+            codeLink=""
+            />
+            </div>
+
+            <div className='featuredProjects'> 
+            <FeaturedProjects 
+            header= "Tracquire"
+            stacks="Nextjs, Laravel"
+            description = "A social commerce application for the exchange of goods. (still building)"
+            type = 'featured'
+            liveLink="https://tracquire.vercel.app"
             codeLink=""
             />
             </div>

@@ -47,64 +47,20 @@ const Resume = () => {
         Work Experience
         </div>
         <div className='familiarLine'></div>
-        </div>
-
-        <div className='workList'>
-        <div className='workHeader'>
-        ZzarEvent - Web developer(Contract)
-        </div>
-        <div className='workDate'>
-        March 10, 2022 - April 22, 2022
-        </div>
-        <div className="briefDescription">
-        worked with zzarEvent Pro and helped them build their website
-        </div>
-
-        <ul>
-            <li>Built a simple website</li>
-            <li>created an api for collecting customers requests</li>
-            <li>created an api for collecting customers feedbacks</li>
-            <li>created an api to enable the admin view all customer request </li>
-            <li>Creaed an api to enable the admin view all the feedbacks</li>
-        </ul>
         </div> 
-
-        <div className='workList'>
-        <div className='workHeader'>
-        Rain Tech - <span>Frontend Developer</span> (Contract)
-        </div>
-        <div className='workDate'>
-        June 17, 2021 - July 4, 2021
-        </div>
-        <div className="briefDescription">
-        Built a Landing page for a tech startup company.
-        </div> 
-        <ul>
-            <li>Brainstormed with the ui/ux team for the design </li>
-            <li>converted the figma design to a website.</li>
-        </ul> 
-
-        </div>
 
         <div className='workList'>
         <div className='workHeader'>
         HNG INTERNSHIP
         </div>
         <div className='workDate'>
-        May, 2020 - July, 2020
+        oct, 2022 - dec, 2022
         </div>
         <div className="briefDescription"> 
-        I contributed in developing user interfaces for quite a 
-        number of products within three months while learning 
-        new skills
+        Led a team of Frontend developers to build an application
         </div>
         <ul>
-        <li>led the backend team in building Apis</li>
-        <li>
-        Assisted the frontend department of my team 
-        to deliver responsive web templates to be sold on 
-        envato market
-        </li>
+        <li>Merging of team pull requests.</li>
         <li>
         Refactored codes of team members
         </li>
