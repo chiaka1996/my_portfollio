@@ -48,16 +48,16 @@ const Home = (props) => {
             />
             </div>
 
-            <div className='featuredProjects'> 
+            {/* <div className='featuredProjects'> 
             <FeaturedProjects 
             header= "Tracquire"
             stacks="Nextjs, Laravel"
             description = "A social commerce application for the exchange of goods. (still building)"
             type = 'featured'
-            liveLink="https://tracquire.vercel.app"
+           
             codeLink=""
             />
-            </div>
+            </div> */}
 
             
            
