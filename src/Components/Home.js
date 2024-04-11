@@ -16,6 +16,17 @@ const Home = (props) => {
 
             <div className='featuredProjects'> 
             <FeaturedProjects 
+            header= "Slumtech Foundation"
+            stacks="Next.js, MONGODB"
+            description = "A website for a non-profit organisation, that specializes in training teenagers in different aspect of technology"
+            type = 'featured'
+            liveLink="https://www.slumtechfoundation.com/about"
+            codeLink=""
+            />
+            </div>
+
+            <div className='featuredProjects'> 
+            <FeaturedProjects 
             header= "Student Year Book"
             stacks="Next.js,MONGODB"
             description = "A student web based year book for graduating students"
