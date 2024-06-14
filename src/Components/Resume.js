@@ -51,10 +51,36 @@ const Resume = () => {
 
         <div className='workList'>
         <div className='workHeader'>
+        Slumtech Foundation (Volunteer)
+        </div>
+        <div className='workDate'>
+        march, 2024 - till date
+        </div>
+        <div className="briefDescription"> 
+        Building and Managing a web application that allows Individual Students and Schools to Signup to free Tech Training programs and
+        give them access to free learning materials.
+        </div>
+        <ul>
+        <li>building a user friendly and responsive web interface</li>
+        <li>
+        building apis to help collect and save users information to the database
+        </li>
+        <li>
+        Consuming the Apis from the Frontend, making it possible for users to save their information 
+        </li>
+        <li>
+        using Nodemailer to help send enquiries directly to the Foundation mail
+        </li>
+        </ul>
+        </div>
+
+        <br/>
+        <div className='workList'>
+        <div className='workHeader'>
         HNG INTERNSHIP
         </div>
         <div className='workDate'>
-        oct, 2022 - dec, 2022
+        oct, 2023 - dec, 2023
         </div>
         <div className="briefDescription"> 
         Led a team of Frontend developers to build an application
