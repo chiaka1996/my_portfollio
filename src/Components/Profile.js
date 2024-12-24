@@ -31,7 +31,7 @@ const Profile = ({name}) => {
         <div className="introduction"> 
         I'm a motivated <strong>Fullstack Developer</strong> with great passion for building 
         excellent <strong>softwares</strong>, I create interactive experiences for amazing people 
-        using modern <strong>web technologies</strong>. I offer over <strong>2 years</strong> of development experience,
+        using modern <strong>web technologies</strong>. I offer over <strong>3 years</strong> of development experience,
         a strong aptitude for learning new technologies,
         and a proven track record of meeting aggressive goals.
         </div>
