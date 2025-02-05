@@ -27,6 +27,17 @@ const Home = (props) => {
 
             <div className='featuredProjects'> 
             <FeaturedProjects 
+            header= "Bright UK Portfolio"
+            stacks="VUE, FIREBASE"
+            description = "A Portfolio website for a Public Speaker "
+            type = 'featured'
+            liveLink="https://www.thebrightuk.com/"
+            codeLink=""
+            />
+            </div>
+
+            <div className='featuredProjects'> 
+            <FeaturedProjects 
             header= "Slumtech Foundation"
             stacks="Next.js, MONGODB"
             description = "A website for a non-profit organisation, that specializes in training teenagers in different aspect of technology"
@@ -47,7 +58,7 @@ const Home = (props) => {
             />
             </div>
 
-            <div className='featuredProjects'> 
+            {/* <div className='featuredProjects'> 
             <FeaturedProjects 
             header= "A2z101"
             stacks="Next.js"
@@ -56,7 +67,7 @@ const Home = (props) => {
             liveLink="https://www.atozoneonone.com/"
             codeLink=""
             />
-            </div>
+            </div> */}
             </div>
         
         </div>

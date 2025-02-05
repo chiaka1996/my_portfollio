@@ -27,7 +27,7 @@ const Resume = () => {
         <div className='subHeaderLine'></div>
         </div>
         <div className='coreTechs'>
-        HTML, CSS, JAVASCRIPT, BOOTSTRAP, MATERIAL UI, REACT, NEXTJS, NODEJS, EXPRESS, MONGODB, REDUX 
+        HTML, CSS, TAILWIND-CSS, JAVASCRIPT, BOOTSTRAP, MATERIAL UI, REACT, NEXTJS, NODEJS, EXPRESS, MONGODB, REDUX 
         </div>
         </div>
 
@@ -51,17 +51,19 @@ const Resume = () => {
 
         <div className='workList'>
         <div className='workHeader'>
-        Slumtech Foundation (Volunteer)
+        1035 Technology remote — part-time frontend developer
+
         </div>
         <div className='workDate'>
         march, 2024 - till date
         </div>
-        <div className="briefDescription"> 
+        {/* <div className="briefDescription"> 
         Building and Managing a web application that allows Individual Students and Schools to Signup to free Tech Training programs and
         give them access to free learning materials.
-        </div>
+        </div> */}
         <ul>
-        <li>building a user friendly and responsive web interface</li>
+        <li>Converting of Figma designs to products</li>
+        <li>building user friendly and responsive web interface</li>
         <li>
         building apis to help collect and save users information to the database
         </li>
@@ -69,7 +71,7 @@ const Resume = () => {
         Consuming the Apis from the Frontend, making it possible for users to save their information 
         </li>
         <li>
-        using Nodemailer to help send enquiries directly to the Foundation mail
+        Maintaining the company website
         </li>
         </ul>
         </div>
