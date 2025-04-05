@@ -28,11 +28,11 @@ const Projects = (props) => {
 
             <div className='featuredProjects'> 
             <FeaturedProjects 
-            header= "Bright UK Portfolio"
-            stacks="VUE, FIREBASE"
-            description = "A Portfolio website for a Public Speaker "
+            header= "Olanrewaju Portfolio"
+            stacks="NEXTJS"
+            description = "A Portfolio website for a Tech Enterpreneur and Philanthropist "
             type = 'featured'
-            liveLink="https://www.thebrightuk.com/"
+            liveLink="https://www.olanrewajuogunleye.com/"
             codeLink=""
             />
             </div>
